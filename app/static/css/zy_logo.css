@@ -6,6 +6,7 @@
 html,
 body {
   width: 100%;
+  min-width:559px;
 }
 
 /* logo
@@ -51,10 +52,127 @@ body {
   left: 251px;
 
   height: 90px;
+
+  text-align: right;
 }
 
-.zy_logoNavLi {
-  float: left;
+.zy_logoNavUl .zy_logoNavLi {
+  font-size: 24px;
+  line-height: 24px;
+
+  position: relative;
+
+  display: inline-block;
+
+  height: 56px;
+  padding: 34px 41px 0;
+
+  color: #b3cae5;
+}
+
+.zy_logoNavLi > a {
+  text-decoration: none;
+
+  color: #b3cae5;
+}
+
+.zy_logoNavLi:hover > a {
+  color: #fff;
+}
+
+/* 深度下拉栏 */
+.zy_logoNavLi:hover .zy_navHeightUl {
+  display: block;
+}
+
+.zy_navHeightUl {
+  font-size: 14px;
+
+  position: absolute;
+  z-index: 10;
+  top: 70px;
+  left: 50%;
+
+  display: none;
+
+  box-sizing: border-box;
+  width: 100px;
+  margin-left: -50px;
+  padding: 5px 3px;
+
+  text-align: left;
+
+  border: 6px solid #012650;
+  background-color: #fff;
+}
+
+.zy_navHeightUl:before {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+
+  display: block;
+  overflow: hidden;
+
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+
+  content: '';
+
+  border-right: 10px solid rgba(255,255,255,0);
+  border-bottom: 10px solid #fff;
+  border-left: 10px solid rgba(255,255,255,0);
+}
+
+.zy_navHeightUl a {
+  line-height: 38px;
+
+  display: block;
+
+  padding: 0 5px;
+
+  text-decoration: none;
+
+  color: #333;
+}
+
+.zy_navHeightUl a:hover {
+  background-color: #e3e3e3;
+}
+
+/* 更多下拉栏 */
+.zy_navMoreUl {
+  width: 140px;
+  margin-left: -75px;
+}
+
+.zy_navMoreLi a {
+  padding: 0 0 0 40px;
+
+  background-image: url(../images/zy_baoXueJLT.png);
+  background-repeat: no-repeat;
+  background-position: -228px 6px;
+}
+
+.zy_navMoreLi .zy_moreLiA2 {
+  background-position: -228px -48px;
+}
+
+.zy_navMoreLi .zy_moreLiA3 {
+  background-position: -228px -105px;
+}
+
+.zy_navMoreLi .zy_moreLiA4 {
+  background-position: -228px -160px;
+}
+
+.zy_navMoreLi .zy_moreLiA5 {
+  background-position: -228px -212px;
+}
+
+.zy_navMoreLi .zy_moreLiA6 {
+  background-position: -228px -268px;
 }
 
 /* 投稿按钮
@@ -74,4 +192,8 @@ body {
   border-radius: 20px;
   outline: none;
   background: none;;
+}
+
+.zy_contribute:hover {
+  background-color: #00aeef;
 }

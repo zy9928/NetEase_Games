@@ -1,0 +1,130 @@
+@charset 'utf-8';
+
+/**
+ *floot区
+ */
+
+/* 公共模块
+--------------------------------------------------------------------------- */
+.zy_flootLang {
+  width: 100%;
+  height: 603px;
+
+  background-image: url(./../images/zy_bgFoot.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.zy_flootKuan {
+  overflow: hidden;
+
+  width: 100%;
+  max-width: 1200px;
+  height: 554px;
+  margin: 0 auto;
+  padding-top: 49px;
+}
+
+.zy_flootTitle {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+
+  width: 96px;
+  height: 51px;
+  padding-top: 9px;
+
+  color: #fff;
+  border-top: 4px solid #00aeef;
+}
+
+/* 常用工具
+----------------------------------------------------------------------------------------- */
+.zy_toolsAppUl {
+  width: 100%;
+  padding-bottom: 63px;
+}
+
+.zy_toolsAppLi {
+  float: left;
+
+  width: 115px;
+  height: 91px;
+  margin-right: 19px;
+}
+
+.zy_toolsAppLi > a {
+  font-size: 0;
+  line-height: 0;
+
+  display: block;
+
+  width: 115px;
+  height: 91px;
+
+  text-align: center;
+  text-decoration: none;
+
+  color: #00aeef;
+}
+
+.zy_toolsAppLi > a:hover {
+  color: #fff;
+}
+
+.zy_toolsAppA > img {
+  display: block;
+
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 14px;
+}
+
+.zy_toolsAppA > span {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+/* 常用网站
+-------------------------------------------------------------------------------------- */
+.zy_flootFriend {
+  width: 100%;
+  margin-bottom: 13px;
+}
+
+.zy_flootFriend > li {
+  font-size: 12px;
+  line-height: 22px;
+
+  float: left;
+
+  padding: 0 6px 0 8px;
+
+  background-image: url(./../images/zy_baoXueJLT.png);
+  background-repeat: no-repeat;
+  background-position: -130px -339px;
+}
+
+.zy_flootFriend a {
+  text-decoration: none;
+
+  color: #00aeef;
+}
+
+.zy_flootFriend a:hover {
+  color: #fff;
+}
+
+.zy_flootFriend .zy_flootFriendFist {
+  padding: 0;
+
+  color: #fff;
+  background: none;
+}
+
+.zy_flootFriend .zy_flootFriendSecend {
+  padding: 0 6px 0 2px;
+
+  color: rgba(0,174,239,.5);
+  background: none;
+}

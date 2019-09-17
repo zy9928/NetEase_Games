@@ -1,0 +1,301 @@
+@charset 'utf-8';
+
+/**
+ *banner栏
+ */
+
+/* body区 */
+.zy_pageBody {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+
+  background-color: #f9f9f9;
+}
+
+/* banner栏 */
+.zy_bannerLang {
+  padding-top: 20px;
+}
+
+/* banner块
+------------------------------------------------------------------- */
+
+/* banner */
+.zy_bannerKuai {
+  position: relative;
+
+  float: left;
+  overflow: hidden;
+
+  width: 63.3%;
+  height: 500px;
+  margin-right: 2%;
+}
+
+.zy_bannerImg {
+  /* 为了实现缩放浏览器窗口但不改变图片大小和居中 */
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  overflow: hidden;
+
+  width: 950px;
+  height: 500px;
+  margin-left: -475px;
+
+  white-space: nowrap;
+}
+
+/* 为了防止图片出现间距 */
+.zy_bannerImgKuai {
+  width: 5000px;
+}
+
+.zy_bannerImg a {
+  font-size: 0;
+  line-height: 0;
+
+  float: left;
+}
+
+.zy_bannerImg img {
+  width: 950px;
+  height: 500px;
+
+  transition: all .5s;
+}
+
+.zy_bannerImg img:hover {
+  transform: scale(1.1);
+}
+
+/* banner切换卡 */
+.zy_bannerQh {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.zy_bannerQh > li {
+  float: left;
+
+  width: 50px;
+  height: 15px;
+  margin-right: 10px;
+
+  background-color: rgba(255,255,255,.7);
+}
+
+/* banner标题 */
+.zy_bannerTitleKuan {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  overflow: hidden;
+
+/* overflow: hidden; */
+
+  width: 95%;
+  padding: 10px 5%;
+
+/* 为防止多个标题纵向排列 */
+
+  white-space: nowrap;
+
+  box-shadow: inset 0 -50px 50px -15px #000;
+}
+
+.zy_bannerTitle {
+  /* 为防止多个标题纵向排列 */
+  display: inline-block;
+
+  width: 100%;
+
+  white-space: normal;
+
+  color: #fff;
+}
+
+.zy_bannerTitle > p {
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+.zy_bannerTitle > span {
+  font-size: 16px;
+  line-height: 28px;
+
+  display: block;
+
+  width: 80px;
+  height: 28px;
+  margin-bottom: 14px;
+
+  text-align: center;
+
+  border-radius: 7px;
+  background-color: #004baa;
+}
+
+/* 搜索框
+------------------------------------------------------------------------------------- */
+.zy_search {
+  float: left;
+
+  box-sizing: border-box;
+  width: 34.7%;
+  height: 60px;
+  margin-bottom: 20px;
+
+  border: 1px solid #e4e4e4;
+}
+
+.zy_searchText {
+  font-size: 16px;
+  line-height: 16px;
+
+  width: 50%;
+  padding-left: 20px;
+
+  vertical-align: middle;
+
+  border: none;
+  outline: none;
+  background-color: #f9f9f9;
+}
+
+.zy_submit {
+  float: right;
+
+  width: 58px;
+  height: 58px;
+
+  border: none;
+  background-color: rgba(0,0,0,0);
+  background-image: url(./../images/zy_baoXueJLT.png);
+  background-repeat: no-repeat;
+  background-position: 16px -280px;
+}
+
+/* 公告栏
+--------------------------------------------------------------------------- */
+.zy_notice {
+  float: left;
+
+  width: 34.7%;
+  margin-bottom: 23px;
+  ;
+}
+
+.zy_noticeCont {
+  position: relative;
+
+  float: left;
+  overflow: hidden;
+
+  width: 48%;
+  height: 210px;
+  margin-right: 3.8%;
+}
+
+.zy_noticeCont > a {
+  font-size: 0;
+  line-height: 0;
+}
+
+.zy_noticeCont img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: 250px;
+  height: 210px;
+  margin-left: -125px;
+
+  transition: all .3s;
+}
+
+.zy_noticeCont:hover img {
+  transform: scale(1.1);
+}
+
+.zy_noticeCont > a {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 26px;
+
+  position: absolute;
+
+  display: block;
+
+  width: 90%;
+  height: 95%;
+  padding: 0 5% 5%;
+
+  color: #fff;
+  box-shadow: inset 0 -50px 50px -15px #000;
+}
+
+.zy_noticeCont span {
+  position: absolute;
+  bottom: 5%;
+}
+
+.zy_noticeCont2 {
+  margin: 0;
+}
+
+/* tip
+---------------------------------------------------------------------- */
+.zy_tipTitle {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 37px;
+
+  float: left;
+}
+
+.zy_tipCont {
+  font-size: 16px;
+  line-height: 22px;
+
+  position: relative;
+
+  float: left;
+
+  width: 33.4%;
+  height: 148px;
+  padding: 46px 0 0 1.3%;
+
+  color: #fff;
+  background-image: url(./../images/zy_bgBannerTipsYouKnow.png);
+}
+
+.zy_tipCont > p {
+  overflow: hidden;
+
+  width: 64%;
+  height: 102px;
+}
+
+.zy_tipCont > span {
+  position: absolute;
+  top: 40px;
+  left: 72.5%;
+
+  display: block;
+
+  width: 52px;
+  height: 52px;
+
+  background-image: url(./../images/zy_baoXueJLT.png);
+  background-repeat: no-repeat;
+  background-position: 2px -155px;
+}
+
+
