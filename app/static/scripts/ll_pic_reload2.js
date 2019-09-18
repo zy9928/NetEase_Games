@@ -1,31 +1,37 @@
 import {ll_pic_big_small} from './ll_pic_big_small.js';
 export function ll_pic_reload2() {
 
+    var dom = document.querySelector('.ll_comment_reload_pic');
+    var time1;
+    
     // 最开始引入4张图片
     (function () {
-        for(let i = 0; i < 4; i++){
-            appendImg();
-            img_move();
-        }
+        // for(let i = 0; i < 4; i++){
+        //     appendImg();
+        //     img_move();
+        // }
+        _promise(12);
     })()
 
-   
     // 根据滚动条的位置来加载节点
     window.onscroll = function (){
         var pageH = document.documentElement.offsetHeight;
         var windH = document.documentElement.clientHeight;
         var scrollT = document.documentElement.scrollTop;
         if (pageH - windH - scrollT < 100) {//滚动条距离底部小于100时，添加一批图片
-            for(var i = 0; i < 4; i++){
-                appendImg();
-            }
-            img_move();
+            // for(var i = 0; i < 4; i++){
+            //     appendImg();
+            // }
+            // img_move();
+
+            clearTimeout(time1);
+
+            _promise(4);
         }
     }
 
      // 插入节点
      function appendImg(){
-        var dom = document.querySelector('.ll_comment_reload_pic');
         var num1 = Math.ceil(Math.random()*15)+5;// 6-20
         var num2 = Math.ceil(Math.random()*4);// 1-4
         var grande =['60.0','70.0','80.0','90.0'];
@@ -35,8 +41,6 @@ export function ll_pic_reload2() {
         }else{
             color = 'black'
         }
-
-
         
         dom.innerHTML += `<div class="ll_comment_items_pic">
                             <div class="ll_img">
@@ -53,6 +57,52 @@ export function ll_pic_reload2() {
                             </div>
                         </div>`
     }
+
+
+     // promise处理代码的先后执行顺序
+     function _promise(pic_num) {
+        function doSomeThing(task) {
+            return new Promise(function (resolve,reject) {
+                time1 = setTimeout(() => {
+                    for(let i = 0; i < pic_num; i++){
+                        appendImg(); 
+                        img_move();
+                    }
+                    resolve(task);
+                }, 1000);
+            })
+        }
+
+        doSomeThing()
+        .then(function () {
+            remove_title();
+            title();
+            console.log(111);
+            
+        })
+    }
+
+
+
+    // /删除提示
+    function remove_title() {
+        
+        var title = document.querySelector('.ll_reload_run_reload');
+        if (title) {
+            dom.removeChild(title);
+            
+        }
+        
+    }
+
+    // // 插入提示
+    function title() {
+        var title = document.createElement('div');
+        title.className = 'll_reload_run_reload'
+        title.innerHTML = '加载中........'
+        dom.appendChild(title);
+    }
+
 
     // 图片的放大缩小
     function img_move() {

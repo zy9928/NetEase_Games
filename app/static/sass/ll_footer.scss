@@ -15,21 +15,23 @@
         }
     }
     ul{
-        margin: 0 auto;
-        width: 22.2%;
+        // width: 22.2%;
         margin-top: 32px;
         margin-bottom: 16px;
+        text-align: center;
 
         li{
-            float: left;
-            width: 12.1%;
-            padding: 0 4%;
-            border-right: 1px solid #364436;
+            display: inline-block;
+            padding: 0 15px;
+            line-height: 1em;
             border-left: 1px solid #364436;
 
+
             a{
+                display: inline-block;
                 font-size: 12px;
-                color: #668091;
+                color: #919191;
+
             }
             
         }
@@ -38,10 +40,15 @@
             border-left: none;
 
         }
-        .li5{
-            padding-right: 0;
-            border-right: none;
-        }
+        // .li5{
+        //     padding-right: 0;
+        //     border-right: none;
+        // }
+    }
+    p{
+        text-align: center;
+        font-size: 11px;
+        color: #646460;
     }
 
 }

@@ -144,6 +144,11 @@ html, body {
   margin-top: 34px;
   overflow: hidden;
 }
+.ll_main .ll_con .ll_con_pic_reload .ll_reload_run_reload {
+  text-align: center;
+  font-size: 18px;
+  color: black;
+}
 .ll_main .ll_con .ll_con_pic_reload .ll_reload_box {
   float: left;
   width: 48%;

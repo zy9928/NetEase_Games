@@ -10,6 +10,9 @@ import {ll_pic_reload2} from './ll_pic_reload2.js';
     var items1 = document.querySelectorAll('.ll_items1');
     var line = document.querySelectorAll('.ll_items1 span');
     for(var i = 0; i < items1.length; i++){
+        if (i == 1) {
+            continue;
+        }
         ll_float_line()(items1[i],line[i],100,0);
     }
 })();

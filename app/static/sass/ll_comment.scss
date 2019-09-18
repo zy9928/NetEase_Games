@@ -209,7 +209,14 @@
         .ll_comment_reload_pic{
             width: 100%;
             margin-top: 30px;
-            
+            overflow: hidden;
+
+            .ll_reload_run_reload{
+                text-align: center;
+                font-size: 18px;
+                color: black;
+            }
+
             .ll_comment_items_pic{
                 float: left;
                 width: 23%;

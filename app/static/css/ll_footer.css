@@ -14,27 +14,27 @@
   width: 100%;
 }
 .ll_footer ul {
-  margin: 0 auto;
-  width: 22.2%;
   margin-top: 32px;
   margin-bottom: 16px;
+  text-align: center;
 }
 .ll_footer ul li {
-  float: left;
-  width: 12.1%;
-  padding: 0 4%;
-  border-right: 1px solid #364436;
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 1em;
   border-left: 1px solid #364436;
 }
 .ll_footer ul li a {
+  display: inline-block;
   font-size: 12px;
-  color: #668091;
+  color: #919191;
 }
 .ll_footer ul .li1 {
   padding-left: 0;
   border-left: none;
 }
-.ll_footer ul .li5 {
-  padding-right: 0;
-  border-right: none;
+.ll_footer p {
+  text-align: center;
+  font-size: 11px;
+  color: #646460;
 }
