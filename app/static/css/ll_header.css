@@ -1,0 +1,319 @@
+  
+  .ll_header {
+    width: 100%;
+    min-width: 1240px;
+    height: 90px;
+    background: #222222;
+    margin-bottom: 44px;
+  }
+  .ll_header .ll_header_index{
+    float: left;
+    width: 13.2%;
+    margin-top: 16px;
+  }
+  .ll_header .ll_img_log {
+    width: 100%;
+  }
+  .ll_header .ll_nav {
+    float: left;
+    height: 100%;
+    width: 78.7%;
+    margin-left: 6.9%;
+  }
+  .ll_header .ll_nav .ll_items1 {
+    float: left;
+    height: 100%;
+    width: 4.1%;
+    margin-right: 4.8%;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    line-height: 90px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .ll_header .ll_nav .ll_items1:hover {
+    color: #FFDC00;
+  }
+  .ll_header .ll_nav .ll_items1 span {
+    display: block;
+    width: 100%;
+    height: 7px;
+    background: #FFDC00;
+    margin-top: -7px;
+    opacity: 0;
+  }
+  .ll_header .ll_nav .show {
+    color: #FFDC00;
+    font-weight: bolder;
+    border-bottom: 7px solid #FFDC00;
+  }
+  .ll_header .ll_nav .ll_a3 {
+    margin: 0;
+    width: 7.0%;
+  }
+  .ll_header .ll_nav .ll_em {
+    float: left;
+    width: 1px;
+    height: 20px;
+    background: #666666;
+    margin-left: 6.7%;
+    margin-top: 34px;
+  }
+  .ll_header .ll_nav .ll_items2 {
+    float: left;
+    height: 90px;
+    line-height: 90px;
+    margin-left: 2.9%;
+    font-size: 0;
+  }
+  .ll_header .ll_nav .ll_items2 .ll_left_img {
+    display: inline-block;
+    width: 21px;
+    height: 19px;
+    background: url("../images/nav.png") -41px 0 no-repeat;
+    vertical-align: middle;
+  }
+  .ll_header .ll_nav .ll_items2 .ll_right_text {
+    display: inline-block;
+    font-size: 17px;
+    margin-left: 7px;
+    vertical-align: middle;
+    color: #B9B9B9;
+  }
+  .ll_header .ll_nav .ll_items2 .ll_img2 {
+    width: 24px;
+    background-position: -64px 0;
+  }
+  .ll_header .ll_nav .ll_items2 .ll_img3 {
+    width: 32px;
+    height: 32px;
+    background-position: -88px 0;
+  }
+  .ll_header .ll_nav .ll_items2:hover .ll_right_text {
+    color: white;
+  }
+  .ll_header .ll_nav .ll_items2:hover .ll_left_img {
+    transition: all 1s;
+    transform: rotateY(360deg);
+  }
+  .ll_header .ll_nav .ll_new_people {
+    float: left;
+    height: 100%;
+    margin-left: 1.9%;
+    line-height: 90px;
+    position: relative;
+  }
+  .ll_header .ll_nav .ll_new_people:hover .ll_new_people_email {
+    display: block;
+  }
+  .ll_header .ll_nav .ll_new_people_a {
+    color: #B9B9B9;
+    font-size: 17px;
+    text-decoration: none;
+  }
+  .ll_header .ll_nav .ll_new_people_email {
+    width: 200px;
+    height: 30px;
+    padding: 10px 0;
+    background: white;
+    border: 1px #eeeeee solid;
+    box-shadow: 1px 1px 7px white;
+    position: absolute;
+    top: 70px;
+    left: -150px;
+    display: none;
+  }
+  .ll_header .ll_nav .ll_new_people_email p {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+  }
+  .ll_header .ll_nav .ll_new_people_email p:hover {
+    background: #eee;
+    font-weight: bolder;
+    color: black;
+  }
+  .ll_header .ll_nav .ll_login {
+    float: left;
+    height: 100%;
+    margin-left: 8.7%;
+    line-height: 90px;
+    position: relative;
+  }
+  .ll_header .ll_nav .ll_login:hover .ll_login_form {
+    display: block;
+  }
+  .ll_header .ll_nav .ll_login .ll_one_a {
+    color: #B9B9B9;
+    font-size: 17px;
+    text-decoration: none;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form {
+    width: 322px;
+    height: 330px;
+    background: #F1F1F1;
+    border: 1px #eeeeee solid;
+    box-shadow: 1px 1px 7px white;
+    position: absolute;
+    top: 70px;
+    left: -250px;
+    box-sizing: border-box;
+    padding-left: 27px;
+    display: none;
+    z-index: 100;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_ipt {
+    width: 268px;
+    height: 46px;
+    border: 1px solid #C5CDDB;
+    border-radius: 5px;
+    line-height: 46px;
+    margin-top: 25px;
+    position: relative;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_ipt input {
+    outline: none;
+    border: 0;
+    margin-left: 20px;
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: bolder;
+    color: black;
+    background: transparent;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_ipt span {
+    display: inline-block;
+    width: 19px;
+    height: 20px;
+    background: url("../images/ll_user.png") no-repeat;
+    margin-left: 11px;
+    vertical-align: middle;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_ipt .ll_span2 {
+    width: 20px;
+    height: 22px;
+    background: url("../images/ll_pass.png") no-repeat;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_ipt2 {
+    margin-top: 16px;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_top_em {
+    display: block;
+    position: absolute;
+    left: 55px;
+    top: 19px;
+    line-height: 1em;
+    font-size: 11px;
+    color: #C9C9C9;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_bao_hu {
+    background: url("../images/ll_webzj_gjlogo2.png") no-repeat left center;
+    padding-left: 20px;
+    margin-top: 17px;
+    font-size: 11px;
+    color: #000000;
+    line-height: 1.5em;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_bao_hu a {
+    font-size: 11px;
+    color: #4AAFE9;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_btn {
+    width: 170px;
+    height: 41px;
+    background: #FD5562;
+    margin-left: 50px;
+    margin-top: 20px;
+    line-height: 41px;
+    border-radius: 5px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 12px;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_title {
+    line-height: 1em;
+    margin-top: 14px;
+    position: relative;
+    margin-right: 26px;
+    padding-bottom: 19px;
+    border-bottom: 1px solid #DFDFDF;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_title input {
+    vertical-align: middle;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_title label {
+    font-size: 12px;
+    color: #999999;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_title label:hover {
+    color: black;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_title span {
+    font-size: 12px;
+    color: #999999;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_title span:hover {
+    color: black;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_title a {
+    font-size: 12px;
+    color: #999999;
+    text-decoration: none;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_title a:hover {
+    color: black;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_title .ll_a_register {
+    position: absolute;
+    right: 0px;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_title .ll_a_register:hover {
+    color: black;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_other {
+    height: 35px;
+    line-height: 35px;
+    margin-top: 6px;
+    font-size: 0;
+    overflow: hidden;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_other span {
+    float: left;
+    font-size: 11px;
+    color: #9FABBF;
+    vertical-align: middle;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_other div {
+    float: left;
+    width: 35px;
+    height: 75px;
+    position: relative;
+    top: 0;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_other .ll_wx {
+    margin-left: 34px;
+    background: url("../images/ll_ologin.png") no-repeat;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_other .ll_xl {
+    margin: 0 23px;
+    background: url("../images/ll_ologin.png") -36px 0 no-repeat;
+  }
+  .ll_header .ll_nav .ll_login .ll_login_form .ll_other .ll_qq {
+    background: url("../images/ll_ologin.png") -71px 0 no-repeat;
+  }
+  .ll_header .ll_nav .ll_new_text {
+    float: left;
+    width: 80px;
+    height: 36px;
+    border: 2px solid #444444;
+    border-radius: 18px;
+    margin-left: 2.5%;
+    margin-top: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+  }
