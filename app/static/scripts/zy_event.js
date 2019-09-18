@@ -18,10 +18,10 @@ define(['jquery','run'],function($,run){
             $(btn)[0].obj = {
                 oldDate: document.documentElement.scrollTop,
                 target: 0,
-                speed: -5,
+                speed: -50,
                 result: function(value){document.documentElement.scrollTop = value;},
                 timer: $(btn)[0],
-                ferquency: 5,
+                ferquency: 1,
             }
             run.uniformRun($(btn)[0].obj);
         });

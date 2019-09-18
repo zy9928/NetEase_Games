@@ -17,7 +17,6 @@ define(['jquery'], function($){
             let pageH = document.documentElement.offsetHeight;
             let winH = document.documentElement.clientHeight;
             let pageScroll = document.documentElement.scrollTop;
-            console.log(pageH - winH - pageScroll);
             if( pageH - winH - pageScroll <= 100 ){
                 fn();
             }

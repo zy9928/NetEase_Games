@@ -1,0 +1,453 @@
+@charset 'utf-8';
+
+/**
+ * 网易大神区
+ */
+
+.zy_netRaseDsKuai {
+  position: relative;
+
+  float: left;
+
+  width: 34.7%;
+
+/* 520px; */
+  height: 1326px;
+  padding-top: 88px;
+}
+
+/* logo */
+.zy_netRaseDsLogo {
+  position: absolute;
+  z-index: 10;
+  top: 40px;
+  left: 30px;
+
+  display: block;
+
+  width: 105px;
+  height: 105px;
+}
+
+/* title */
+.zy_netRaseDsTitle {
+  font-size: 27px;
+  line-height: 27px;
+
+  position: absolute;
+  top: 47px;
+  right: 0;
+  left: 157px;
+
+  overflow: hidden;
+
+  height: 27px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  color: #333;
+}
+
+/* 网易大神内容区
+--------------------------------------------------------------------------------- */
+.zy_netRaseDsContKuai {
+  position: relative;
+  overflow: hidden;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #1e2146;
+}
+
+/* 副标题 */
+.zy_netRaseDsContTitle {
+  font-size: 16px;
+  line-height: 16px;
+
+  top: 15px;
+
+  height: 16px;
+
+  color: #fff;
+}
+
+/* 内容推荐 */
+.zy_dsUserRecommendKuai {
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  left: 10px;
+
+  height: 261px;
+  margin-bottom: 10px;
+  padding: 20px 17px;
+
+  background-color: #2d3360;
+}
+
+/* 内容推荐标题 */
+.zy_dsUserRecommendTitle {
+  font-size: 0;
+  line-height: 0;
+  position: relative;
+
+  width: 100%;
+  height: 33px;
+
+  border-bottom: 1px solid #3a3f6a;
+}
+.zy_dsUserRecommendTitle>span{
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff;
+}
+.zy_dsUserRecommendTitle>p{
+  position: absolute;
+  right:0;
+  top:1px;
+  height:16px;
+  cursor: pointer;
+}
+.zy_dsUserRecommendTitle img{
+  margin:1px 8px 0 0;
+  transition: all 0.7s;
+}
+.zy_dsUserRecommendTitle b{
+  font-weight: normal;
+  font-size: 12px;
+  line-height:16px;
+  color:#999999;
+}
+.zy_dsUserRecommendTitle>p:hover b{
+  color:#fff;
+}
+.zy_dsUserRecommendTitle>p:hover img{
+  transform: rotate(360deg);
+}
+
+/* 内容推荐内容 */
+.zy_dsUserRecommendCont {
+  position: absolute;
+  top: 61px;
+  right: 30px;
+  left: 30px;
+
+  overflow: hidden;
+
+  height: 220px;
+}
+
+/* 为了横向滚动 */
+.zy_dsUserRecContLang {
+  position: relative;
+
+  width: 10000px;
+  height: 100%;
+}
+
+/* 左右点击按钮 */
+.zy_dsUserRecBtn {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+
+  display: block;
+
+  width: 12px;
+  height: 22px;
+  margin-top: 7px;
+
+  background-image: url(./../images/zy_baoXueJLT.png);
+  background-repeat: no-repeat;
+  background-position: 0 -336px;
+}
+
+.zy_dsUserRecBtnL {
+  left: 8px;
+
+  background-position: -249px -325px;
+}
+
+/* 推荐用户 
+--------------------------------------------------------------------*/
+.zy_dsUserRecommend {
+  float: left;
+
+  width: 140px;
+  height: 210px;
+  margin-right: 10px;
+  padding-top: 10px;
+
+  border-radius: 12px;
+  background-color: #353d6e;
+}
+
+/* 头像 */
+.zy_dsUserRecHead {
+  display: block;
+
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 8px;
+
+  border-radius: 50%;
+}
+
+/* id */
+.zy_dsUserRecId {
+  font-size: 14px;
+  line-height: 14px;
+
+  height: 14px;
+  margin-bottom: 8px;
+
+  text-align: center;
+
+  color: #fff;
+}
+
+/* 介绍 */
+.zy_dsUserRecJs {
+  font-size: 12px;
+  line-height: 18px;
+
+  overflow: hidden;
+
+  width: 113px;
+  height: 37px;
+  margin: 0 auto 22px;
+
+  text-align: center;
+
+  color: #989abf;
+}
+
+/* 查看主页 */
+.zy_dsUserRecRead {
+  font-size: 14px;
+  line-height: 30px;
+
+  display: block;
+
+  width: 90px;
+  height: 30px;
+  margin: 0 auto;
+
+  text-align: center;
+
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  background-image: linear-gradient(-270deg,#803eff,#5163ff);
+}
+
+/* 大神说说
+---------------------------------------------------------------------------------- */
+.zy_dsSSLang {
+  position: absolute;
+  top: 381px;
+  right: 10px;
+  left: 10px;
+}
+
+.zy_dsSSKuai {
+  font-size: 0;
+  line-height: 0;
+
+  position: relative;
+
+  display: block;
+
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+
+  cursor: pointer;
+
+  background-color: #2d3360;
+}
+
+/* ID栏 */
+.zy_dsSSIDLang {
+  position: relative;
+
+  width: 100%;
+  height: 40px;
+  margin-bottom: 23px;
+}
+
+.zy_dsSSHead {
+  display: block;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+}
+
+/* 官方认证 */
+.zy_dsSSG {
+  top: 24px;
+  left: 24px;
+}
+
+/* ☆认证 */
+.zy_dsSSX {
+  top: 24px;
+  left: 24px;
+  background-color: #f5a623;
+}
+
+/* user */
+.zy_dsSSUser {
+  font-size: 16px;
+  line-height: 16px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 68px;
+
+  height: 16px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  color: #fff;
+}
+
+/* from */
+.zy_dsSSFrom {
+  font-size: 12px;
+  line-height: 12px;
+
+  position: absolute;
+  top: 27px;
+  right: 0;
+  left: 68px;
+
+  display: block;
+
+  height: 12px;
+
+  color: #6d7099;
+}
+
+/* 内容栏 */
+.zy_dsSSContText {
+  font-size: 15px;
+  line-height: 21px;
+
+  width: 100%;
+  margin-bottom: 19px;
+
+  color: #fff;
+}
+
+/* 内容图 */
+.zy_dsSSContImgKuai {
+  width: 100%;
+}
+
+.zy_dsSSContImgBox {
+  position: relative;
+
+  float: left;
+  overflow: hidden;
+
+  width: 30%;
+  height: 160px;
+  margin-right: 5%;
+  margin-bottom: 20px;
+}
+
+.zy_dsSSContImgBox:nth-child(3),
+.zy_dsSSContImgBox:nth-child(6),
+.zy_dsSSContImgBox:nth-child(9) {
+  margin-right: 0;
+}
+
+.zy_dsSSContImgBox > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 147px;
+  margin-left: -73px;
+}
+
+/* 状态栏 */
+.zy_dsSSZtLang {
+  width: 100%;
+}
+
+.zy_dsSSZtLang > span {
+  font-size: 12px;
+  line-height: 15px;
+
+  display: inline-block;
+
+  width: 38px;
+  margin-right: 20px;
+  padding-left: 25px;
+
+  color: #fff;
+  background-image: url(./../images/zy_dsSSZZDz_02.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.zy_dsSSZtLang .zy_dsSSZtZf {
+  background-image: url(./../images/zy_dsSSZZZf_03.jpg);
+}
+
+.zy_dsSSZtLang .zy_dsSSZtPl {
+  background-image: url(./../images/zy_dsSSZZPl_03.jpg);
+}
+
+/* 若为长文 */
+.zy_daSSContLongKuai {
+  position: relative;
+
+  overflow: hidden;
+
+  width: 100%;
+  height: 241px;
+  margin-bottom: 17px;
+
+  border-radius: 20px;
+}
+
+.zy_daSSContLongKuai:before {
+  font-size: 12px;
+  line-height: 20px;
+
+  position: absolute;
+  top: 10px;
+  right: 5%;
+  z-index:10;
+
+  display: block;
+
+  width: 58px;
+  height: 20px;
+
+  content: '大神长文';
+  text-align: center;
+
+  color: #fff;
+  border-radius: 10px;
+  background: #e76464;
+}
+
+.zy_daSSContLongKuai > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index:1;
+
+  width: 470px;
+  margin-left: -235px;
+}

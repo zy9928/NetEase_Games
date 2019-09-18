@@ -252,5 +252,97 @@
             "zy_dsLongTextUser": "艾泽拉斯情报局",
             "zy_dsLongTextTime": "1周前"
         }
+    },
+    "zy_dsSSKuai": {
+        "text1": {
+            "zy_dsSSHead": "zy_userImg1.jpg",
+            "zy_dsLongTextGf": ["zy_dsSSX","☆"],
+            "zy_dsSSUser": "阿里Alee",
+            "zy_dsSSFrom": "12小时前",
+            "zy_dsSSContText": "毫无违和感？你也来玩玩？（据说ai换脸有隐私风险，但是我不管，好玩就够了）早点睡觉，明天早上起来玩冒险😎，如果暴雪这次再做的不好玩就喷tm的😤😤😤。。。大家买了冒险预购吗？1.128买了再说，送橙卡送卡背就是赚！2.买预购不是傻子？我等上线了买98的。。。3.用金币开不好吗？4.打冒险还要花钱？我选择不玩 ",
+            "zy_dsSSContImgKuai": ["zy_dsSSContImgKuai","zy_daShenShuoShuo1.jpeg","zy_daShenShuoShuo2.jpeg","zy_daShenShuoShuo1.jpeg","zy_daShenShuoShuo2.jpeg"],
+            "zy_dsSSZtPl": "3",
+            "zy_dsSSZtDz": "1"
+        },
+        "text2": {
+            "zy_dsSSHead": "zy_userImg2.jpg",
+            "zy_dsLongTextGf": ["zy_dsSSG","官"],
+            "zy_dsSSUser": "炉石传说盒子",
+            "zy_dsSSFrom": "1天前",
+            "zy_dsSSContText": "奥丹姆最强过牌是谁？你心里和Box君想的一样吗？",
+            "zy_dsSSContImgKuai": ["zy_daSSContLongKuai","zy_daShenShuoShuo3.png"],
+            "zy_dsSSZtPl": "100",
+            "zy_dsSSZtDz": "1万"
+        },
+        "text3": {
+            "zy_dsSSHead": "zy_userImg2.jpg",
+            "zy_dsLongTextGf": ["zy_dsSSG","官"],
+            "zy_dsSSUser": "炉石传说盒子",
+            "zy_dsSSFrom": "1天前",
+            "zy_dsSSContText": " 当初刚出来的时候，都叫人家小浪蹄子，现在逐星出来了，新人胜旧人，一个个都用上逐星了。By ninko",
+            "zy_dsSSContImgKuai": ["zy_dsSSContImgKuai","zy_daShenShuoShuo5.jpeg"],
+            "zy_dsSSZtPl": "100",
+            "zy_dsSSZtDz": "200"
+        },
+        "text4": {
+            "zy_dsSSHead": "zy_userImg3.jpg",
+            "zy_dsLongTextGf": ["zy_dsSSX","☆"],
+            "zy_dsSSUser": "快乐风男",
+            "zy_dsSSFrom": "1天前",
+            "zy_dsSSContText": "  普通模式挺好过的，英雄模式就难了，有通关的吗？",
+            "zy_dsSSContImgKuai": ["zy_dsSSContImgKuai","zy_daShenShuoShuo10.jpeg"],
+            "zy_dsSSZtPl": "1",
+            "zy_dsSSZtDz": "0"
+        },
+        "text5": {
+            "zy_dsSSHead": "zy_userImg4.jpg",
+            "zy_dsLongTextGf": ["zy_dsSSX","☆"],
+            "zy_dsSSUser": "我不是黁奶",
+            "zy_dsSSFrom": "1天前",
+            "zy_dsSSContText": "   炉石新冒险“古墓惊魂”上线，你们准备好金币了吗？",
+            "zy_dsSSContImgKuai": ["zy_dsSSContImgKuai","zy_daShenShuoShuo11.jpeg"],
+            "zy_dsSSZtPl": "1",
+            "zy_dsSSZtDz": "10"
+        },
+        "text6": {
+            "zy_dsSSHead": "zy_userImg5.jpg",
+            "zy_dsLongTextGf": ["zy_dsSSG","官"],
+            "zy_dsSSUser": "炉边聚会",
+            "zy_dsSSFrom": "1天前",
+            "zy_dsSSContText": "不愧是我，一遍过！这次的冒险模式还是有点难度的，可惜我太强了！",
+            "zy_dsSSContImgKuai": ["zy_dsSSContImgKuai","zy_daShenShuoShuo12.png"],
+            "zy_dsSSZtPl": "1",
+            "zy_dsSSZtDz": "10"
+        },
+        "text7": {
+            "zy_dsSSHead": "zy_userImg5.jpg",
+            "zy_dsLongTextGf": ["zy_dsSSG","官"],
+            "zy_dsSSUser": "炉边聚会",
+            "zy_dsSSFrom": "1天前",
+            "zy_dsSSContText": "期待已久的冒险来啦，话不多说，你们想知道的都在这里，首章免费，待聚会君先去体验一下",
+            "zy_dsSSContImgKuai": ["zy_daSSContLongKuai","zy_daShenShuoShuo4.png"],
+            "zy_dsSSZtPl": "10",
+            "zy_dsSSZtDz": "10"
+        },
+        "text8": {
+            "zy_dsSSHead": "zy_userImg1.jpg",
+            "zy_dsLongTextGf": ["zy_dsSSX","☆"],
+            "zy_dsSSUser": "阿里Alee",
+            "zy_dsSSFrom": "12小时前",
+            "zy_dsSSContText": "毫无违和感？你也来玩玩？（据说ai换脸有隐私风险，但是我不管，好玩就够了）早点睡觉，明天早上起来玩冒险😎，如果暴雪这次再做的不好玩就喷tm的😤😤😤。。。大家买了冒险预购吗？1.128买了再说，送橙卡送卡背就是赚！2.买预购不是傻子？我等上线了买98的。。。3.用金币开不好吗？4.打冒险还要花钱？我选择不玩 ",
+            "zy_dsSSContImgKuai": ["zy_dsSSContImgKuai","zy_daShenShuoShuo1.jpeg","zy_daShenShuoShuo2.jpeg","zy_daShenShuoShuo1.jpeg","zy_daShenShuoShuo2.jpeg"],
+            "zy_dsSSZtPl": "3",
+            "zy_dsSSZtDz": "1"
+        },
+        "text9": {
+            "zy_dsSSHead": "zy_userImg2.jpg",
+            "zy_dsLongTextGf": ["zy_dsSSG","官"],
+            "zy_dsSSUser": "炉石传说盒子",
+            "zy_dsSSFrom": "1天前",
+            "zy_dsSSContText": "奥丹姆最强过牌是谁？你心里和Box君想的一样吗？",
+            "zy_dsSSContImgKuai": ["zy_daSSContLongKuai","zy_daShenShuoShuo3.png"],
+            "zy_dsSSZtPl": "100",
+            "zy_dsSSZtDz": "1万"
+        }
     }
 }

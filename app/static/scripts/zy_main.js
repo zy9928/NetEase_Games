@@ -46,6 +46,7 @@ require(['jquery','tap'], function($,tap){
 // 瀑布流
 require(['jquery','waterfall'], function($,water){
     // 请求数据
+    // 长文
     let requestDate = function (){
         $.getJSON('./../static/json/zy_dsLongText.json',function(json){
             // console.log(json.zy_dsLongTextLi[`text1`].zy_dsLongTextHead);
@@ -71,4 +72,72 @@ require(['jquery','waterfall'], function($,water){
     }
     water.leadingOk(requestDate);
     water.bottomLoad(requestDate);
+    // 说说
+    let requestDateSS = function (){
+        $.getJSON('./../static/json/zy_dsLongText.json',function(json){
+            // console.log(json.zy_dsLongTextLi[`text1`].zy_dsLongTextHead);
+            for(var i = 1 ; i <= 9 ; i++){
+                var head = json.zy_dsSSKuai[('text'+i)].zy_dsSSHead;
+                if(json.zy_dsSSKuai[('text'+i)].zy_dsLongTextGf[0] == "zy_dsSSX"){
+                    var rzClass = "zy_dsSSX";
+                    var rzCont = "☆" ;
+                }else{
+                    var rzCont = "官";
+                }
+                var userID = json.zy_dsSSKuai[('text'+i)].zy_dsSSUser;
+                var userFrom = json.zy_dsSSKuai[('text'+i)].zy_dsSSFrom;
+                var contText = json.zy_dsSSKuai[('text'+i)].zy_dsSSContText;
+                if(json.zy_dsSSKuai[('text'+i)].zy_dsSSContImgKuai[0] == "zy_dsSSContImgKuai"){
+                    var contImgClass = "zy_dsSSContImgKuai";
+                    var contImgCont = '';
+                    for(var j = 1 ; j < json.zy_dsSSKuai[('text'+i)].zy_dsSSContImgKuai.length ; j ++){
+                        contImgCont = contImgCont.concat(`<div class="zy_dsSSContImgBox"><img src="./../static/images/${json.zy_dsSSKuai[('text'+i)].zy_dsSSContImgKuai[j]}" alt="说说图片" class="zy_dsSSContImg"></div>`);
+                    }
+                }else{
+                    var contImgClass = "zy_daSSContLongKuai";
+                    var contImgCont = `<img src="./../static/images/${json.zy_dsSSKuai[('text'+i)].zy_dsSSContImgKuai[1]}" alt="说说图片" class="zy_dsSSContImg">`
+                }
+                $('.zy_dsSSLang').append(`
+                <a class="zy_dsSSKuai zy_tx">
+                    <!-- ID栏 -->
+                    <div class="zy_dsSSIDLang">
+                        <img src="./../static/images/${head}" alt="头像" class="zy_dsSSHead">
+                        <span class="zy_dsLongTextGf ${rzClass}">${rzCont}</span>
+                        <h6 class="zy_dsSSUser">${userID}</h6>
+                        <span class="zy_dsSSFrom">${userFrom}&nbsp;来自网易大神</span>
+                    </div>
+                    <p class="zy_dsSSContText">${contText}</p>
+                    <div class="${contImgClass} zy_tx">${contImgCont}</div>
+                    <p class="zy_dsSSZtLang">
+                        <span class="zy_dsSSZtZf">转发</span>
+                        <span class="zy_dsSSZtPl">${json.zy_dsSSKuai[('text'+i)].zy_dsSSZtPl}</span>
+                        <span class="zy_dsSSZtDz">${json.zy_dsSSKuai[('text'+i)].zy_dsSSZtDz}</span>
+                    </p>
+                </a>
+                `);
+            }
+        });
+        /* let zy_ssImg = -($('.zy_dsSSContImg').height())/2;
+        $('.zy_dsSSContImg').css('margin-top',zy_ssImg); */
+    }
+    water.leadingOk(requestDateSS);
+    // water.bottomLoad(requestDateSS);
+});
+
+
+// 工具栏宽高成比例
+require(['jquery'], function($){
+    let timerHW;
+    clearInterval(timerHW);
+    timerHW = setInterval(function(){
+        let y = ($('.zy_dsToolsImg').width()) * 0.3;
+        $('.zy_dsToolsImg').height(y);
+    },50);
+});
+
+
+// 说说图片居中
+require(['jquery'], function($){
+    let zy_ssImg = -($('.zy_dsSSContImg').height())/2;
+    $('.zy_dsSSContImg').css('margin-top',zy_ssImg);
 });
