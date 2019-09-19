@@ -1,0 +1,136 @@
+@charset 'utf-8';
+/* 客户端游戏 */
+.sry_clientAll {
+    width:100%;
+    max-width:1920px;
+    min-width:1260px;
+    height:620px;
+    margin:0 auto;
+    position:relative;
+    background: #fff;
+}
+.sry_client {
+    width:1260px;
+    height:460px;
+    overflow: hidden;
+    margin:0 auto;
+    border-right:1px solid #eee;
+    border-left:1px solid  #eee;
+}
+.sry_clientLeft {
+    float:left;
+    width:445px;
+}
+.sry_clientRight {
+    float:left;
+    width:814px;
+}
+.sry_client .sry_navHeader3 {
+    width: 405px;
+    height: 16px;
+    line-height: 50px;
+    padding: 17px 0 17px 40px;
+    background: #fbfbfb;
+}
+.sry_client  .sry_navHeader4 {
+    width:814px;  /*814px*/
+    height:16px;  /*50px*/
+    line-height:50px;
+    padding:17px 0 17px 0;
+    background: #fbfbfb;
+}
+.sry_navHeader3 em ,.sry_navHeader4 em {
+    display:block;
+    color:#dd1136;
+    height:16px;
+    line-height:16px;
+    font-size:16px;
+    font-weight:700;
+    text-indent:36px;
+    border-left:4px solid #dd1136;
+}
+.sry_nav_con7 {
+    float:left;
+    width:298px;  /*298*/
+    padding:30px 0 30px 0;
+}
+.sry_nav_con7 h2 ,.sry_nav_con8 h2 ,.sry_nav_con9 h2  ,.sry_nav_con10 h2 {
+    color:#6b614a;
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:20px;
+    padding-left:40px;
+}
+.sry_nav_con8 {
+    float:left;
+    width:146px;    /*146*/
+    padding-top:30px;
+    border-left:1px solid #eee;
+}
+.sry_nav_list7 ,.sry_nav_list8 ,.sry_nav_list9 ,.sry_nav_list10 {
+    padding-left:36px;
+}
+.sry_client li {
+    float:left;
+    width:131px;
+    padding:2px 0;
+}
+.sry_nav_list7 .sry_NO1 {
+    display: inline-block;
+    width:18px;
+    height:9px;
+    background: url(../images/sry_img/sry_many1.png) no-repeat -68px 0;
+}
+.sry_client a {
+    color:#7d6695;
+    font-size:14px;
+}
+.sry_client a:hover {
+    color:#444;
+    font-weight:800;
+}
+.sry_nav_con9 {
+    float:left;
+    width:176px;    /*176px*/
+    padding-top:30px;
+    border-left:1px solid #eee;
+}
+.sry_nav_con10 {
+    float:left;
+    width:636px;    /*636px*/
+    padding-top:30px;
+    border-left:1px solid #eee;
+}
+.sry_nav_list10 li {
+    width:140px;
+}
+.sry_clientAll  .sry_btn ,.sry_btn1 {
+    width:120px;
+    height:37px;
+    position: absolute;
+    left:50%; 
+    bottom:76px;
+    margin-left:-60px;
+    border:none;
+    color:#6d6d6d;
+    background: #f1f1f1;
+}
+.sry_btn:hover ,.sry_btn1:hover {
+    background: #dbdcdf;
+}
+.sry_clientAll .sry_btn1 {
+    display:none;
+}
+.sry_cliBott {
+    width:1260px;
+    position: absolute;
+    bottom:40px;
+    left:50%;
+    margin-left:-100px;
+    text-align: center;
+    color: #5a5a5a;
+    font-size: 12px;
+}
+.sry_cliBott span {
+    float:left;
+}
