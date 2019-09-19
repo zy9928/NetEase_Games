@@ -299,6 +299,7 @@
     width: 61.3%;
     height: 998px;
     margin-top: 70px;
+    float: left;
 }
 
 .title {
@@ -436,13 +437,161 @@
 .jingxuan-case li:hover .talk {
     opacity: 1;
 }
+/************游戏新鲜事*********************/
+.fresh{
+    width: 34.7%;
+    height: 762px;
+    float: right;
+    margin: 70px 0.3% 0 0;
+}
+.fresh .fresh-wrap{
+    width: 100%;    
+    height: 100%;
+    background: #fff;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.fresh .fresh-list{
+    width: 100%;    
+    height: 650px;
+    margin-top: 30px;
+    border-bottom: 1px solid #ccc;
+    position:relative;
+}
+.fresh .fresh-list::after{
+    content:'';
+    position:absolute;
+    background:#e4e4e4;
+    width: 1px;
+    height:466px;
+    top:128px;
+    left:16.9%;
+}
+.fresh .fresh-list .fresh-case{
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid #ccc;    
+}
+.fresh .fresh-list .fresh-case a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.fresh .fresh-list .fresh-case a:hover .history{
+    color: #F4B126;
+}
+.fresh .fresh-list .fresh-case a .day{
+    width: 57px;
+    height: 62px;
+    color: #666;
+    text-align: center;
+    line-height: 68px;
+    font-size:34px;
+    margin: 10px 0 0 3.1%;
+    float: left;
+    background: url(../images/index.png) 0 0 no-repeat;
+}
+.fresh .fresh-list .fresh-case a .date{
+    color: #999;
+    font-size:14px;
+    float: left;
+    margin: 22px 0 6px 6.5%;
+}
+.fresh .fresh-list .fresh-case a .history{
+    color: #666;
+    font-size:16px;
+    float: left;
+    margin-left: 6.5%;
+}
+.fresh .fresh-list .fresh-case-detail{
+    width: 100%;
+    height: 73px;
+    position: relative;
+    margin-top:20px;
+}
+.fresh .fresh-list .fresh-case-detail:hover .detail-time{
+    color:#F4B126;
+}
+.fresh .fresh-list .fresh-case-detail:hover .detail-con{
+    color:#F4B126;
+}
+.fresh .fresh-list .fresh-case-detail:hover .circle{
+    background: #F4B126;
+}
+.fresh .fresh-list .fresh-case-detail a{
+    display: block;
+    width: 100%;
+    height: 73px;
+}
+.fresh .fresh-list .fresh-case-detail a .detail-time{
+    color: #BDBDBD;
+    font-size:20px;
+    float: left;
+    margin: 0 0 0 3.1%;
+}
+.fresh .fresh-list .fresh-case-detail a .circle{
+    width: 11px;
+    height: 11px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background: #fff;
+    display: block;
+    position: absolute;
+    left: 15.8%;
+    top: 5px;
+    z-index:1;
+}
 
+.fresh .fresh-list .fresh-case-detail a .detail-con{
+    color: #333;
+    width: 75%;
+    height: 73px;
+    font-size:16px;
+    margin-left: 6.5%;
+    float: left;
+    margin: 0 0 0 8.7%;
+    border-bottom: 1px solid #ccc;
+    font-weight:700;
+}
+.fresh .fresh-list .fresh-case-detail:nth-of-type(7) a .detail-con{
+    border-bottom:none;
+}
+.fresh .fresh-wrap .fresh-btn{
+    width:49.2%;
+    height:40px;
+    color:#333;
+    font-size:16px;
+    text-align:center;
+    line-height:40px;
+    background:#FFD222;
+    border-radius:22px;
+    margin:20px 0 0 25.4%;
+    cursor: pointer;
+}
+/************游戏广告*********************/
+.adv4{
+    width: 34.7%;
+    height:150px;
+    margin:102px 0.3% 0 0 ;
+    float: right;
+}
+.adv4 a {
+    width: 100%;
+    display: block;
+    height: 150px;
+}
+
+.adv4 a img {
+    width: 100%;
+    height: 100%;
+}
 /************爱玩评测*********************/
-
 .test {
     width: 100%;
     height: 374px;
     margin-top: 82px;
+    float:left;
     overflow: hidden;
 }
 
@@ -559,6 +708,7 @@
     width: 100%;
     height: 150px;
     margin-top: 40px;
+    float:left;
 }
 
 .adv1 a {
@@ -745,7 +895,6 @@
     height: 936px;
     margin-top: 72px;
     float: right;
-    margin-left: 3.9%;
     margin: 72px 0.3% 0 0;
 }
 .onsale .title a{
@@ -837,4 +986,37 @@
 }
 .onsale .onsale-list .onsale-case:hover .platform{
     transform: translateY(60px);
+}
+
+/*******************游戏广告*************************/
+.adv2{
+    width: 34.7%;
+    height: 176px;
+    float: left;
+    margin: 55px 0 0 3.7%;
+}
+.adv2 a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.adv2 a img{
+    width: 100%;
+    height: 100%;
+}
+/*******************游戏广告*************************/
+.adv3{
+    width: 100%;
+    height: 150px;
+    float: left;
+    margin-top: 40px;
+}
+.adv3 a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.adv3 a img{
+    width: 100%;
+    height: 100%;
 }
