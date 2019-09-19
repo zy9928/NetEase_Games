@@ -172,6 +172,7 @@
   border-radius: 10px;
   background: white;
   position: relative;
+  cursor: pointer;
 }
 .ll_comment_main .ll_comment_right .ll_comment_reload_pic .ll_comment_items_pic .ll_img {
   width: 100%;

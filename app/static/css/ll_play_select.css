@@ -159,6 +159,7 @@ html, body {
   border-radius: 8px;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 .ll_main .ll_con .ll_con_pic_reload .ll_reload_box .ll_reload_mask {
   width: 100%;
