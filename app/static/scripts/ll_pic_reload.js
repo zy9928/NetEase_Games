@@ -17,7 +17,7 @@ export function ll_pic_reload() {
         var pageH = document.documentElement.offsetHeight;
         var windH = document.documentElement.clientHeight;
         var scrollT = document.documentElement.scrollTop;
-        if (pageH - windH - scrollT < 200) {//滚动条距离底部小于100时，添加一批图片
+        if (pageH - windH - scrollT < 10) {//滚动条距离底部小于100时，添加一批图片
             
             clearTimeout(time1);
 
