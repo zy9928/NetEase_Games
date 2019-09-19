@@ -608,14 +608,20 @@
 .test .test-case li:nth-of-type(5){
     margin-right: 0;
 }
-.test .test-case li:hover .content {
+/* .test .test-case li:hover .content {
     width: 340px;
-}
+} */
 
-.test .test-case li:hover {
+/* .test .test-case li:hover {
     width: 562px;
+} */
+.test .test-case .active{
+    width: 562px;
+    transition: 0.6s linear;
 }
-
+.test .test-case .active .content{
+    width:340px;
+}
 .test .test-case li a {
     display: block;
     width: 222px;
