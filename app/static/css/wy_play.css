@@ -358,6 +358,7 @@
     float: left;
     margin-right: 1.4%;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .jingxuan-case li img {
@@ -379,10 +380,11 @@
     top: 0;
     opacity: 0;
     transition: 0.3s linear;
+    z-index: 1;
 }
 
 .jingxuan-case li .mask:hover {
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .comment {
@@ -689,12 +691,15 @@
     height: 608px;
     margin-top: 32px;
 }
+.tuijian .tuijian-case li:nth-of-type(4),.tuijian .tuijian-case li:nth-of-type(6){
+    margin-right: 0;
+}
 .tuijian .tuijian-case .tuijian-case-one{
     width: 23.1%;
     height:296px;
     float: left;
     overflow: hidden;
-    margin-right: 1.1%;
+    margin-right: 2.5%;
     position: relative;
 }
 .tuijian .tuijian-case .tuijian-case-one img{
@@ -706,12 +711,12 @@
     transform: scale(1.3);
 }
 .tuijian .tuijian-case .tuijian-case-two{
-    width: 47.5%;
+    width: 48.7%;
     height: 296px;
     float: left;
     position: relative;
     overflow:hidden;
-    margin-right: 1.1%;
+    margin-right: 2.5%;
     margin-top: 15px;
 }
 .tuijian .tuijian-case .tuijian-case-two img{
@@ -748,7 +753,7 @@
 }
 .onsale .onsale-list{
     width: 94.2%;
-    height: 860px;
+    height: 890px;
     margin-top:30px;
     border: 1px solid #ccc;
     background: #fff;
@@ -760,8 +765,16 @@
     border-bottom: 1px solid #e4e4e4;
     transition:height 0.2s ease-in-out;
 }
+.onsale .onsale-list .onsale-case a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.onsale .onsale-list .onsale-case:nth-of-type(9){
+    border-bottom: none;
+}
 .onsale .onsale-list .onsale-case:hover{
-    height: 156px;
+    height: 192px;
 }
 .onsale .onsale-list .onsale-case:hover img{
     height: 132px;
@@ -770,6 +783,7 @@
     width: 19.2%;
     height: 66px;
     float: left;
+    margin-top: 10px;
 }
 .onsale .onsale-list .onsale-case div img{
     width: 100%;
@@ -809,7 +823,7 @@
     font-size: 18px;
     position: absolute;
     transition: 0.2s linear;
-    top:15px;
+    top:10px;
     left: 310px;
     width: 61px;
 }
