@@ -178,7 +178,7 @@
 }
 
 .about .media .gold {
-    background-position: -3.2% 0;
+    background-position: 3px 0;
     transition: 0.2s linear;
 }
 
@@ -187,7 +187,7 @@
 }
 
 .about .media .weibo {
-    background-position: 23.8% 2px;
+    background-position: -30px 2px;
     transition: 0.2s linear;
 }
 
@@ -197,7 +197,7 @@
 
 .about .media .zhihu {
     width: 7.1%;
-    background-position: 48.9% 3px;
+    background-position: -63px 3px;
     transition: 0.2s linear;
 }
 
@@ -207,7 +207,7 @@
 
 .about .media .steam {
     width: 7.1%;
-    background-position: 72.1% 0;
+    background-position: -93px 0;
     transition: 0.2s linear;
 }
 
@@ -216,7 +216,7 @@
 }
 
 .about .hope {
-    width: 13.4%;
+    width: 14.4%;
     height: 32px;
     float: left;
     color: #666;
@@ -224,7 +224,7 @@
     background: url(../images/focus1.png) -123px 4px no-repeat;
     cursor: pointer;
     transition: 0.2s linear;
-    margin-left: 16.7%;
+    margin-left: 15.7%;
     padding-left: 6.8%;
 }
 
