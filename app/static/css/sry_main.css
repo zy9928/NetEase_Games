@@ -40,16 +40,12 @@
 .sry_reList1 .sry_reLi1 {
     position:relative;
 }
-/* .sry_reList1 .sry_reLi1:hover .sry_re_mask {
-    display:block;
-    transition:all 0.3 ease-in;
-} */
 .sry_reLi1 .sry_re_mask {
     width:300px;
     height:170px;
     position: absolute;
     top:-170px;
-    display:none;
+    /* display:none; */
 }
 .sry_reLi1 .sry_re_mask a {
     display: block;
@@ -59,6 +55,10 @@
 .sry_reLi1 .sry_re_mask img {
     width:300px;
     height:170px;
+}
+.sry_reBox {
+    width:300px;
+    height:340px;
 }
 .sry_remenTit ,.sry_remenTit1 {
     width:945px;
@@ -123,6 +123,7 @@
     height:170px;
     position: absolute;
     top:0;
+    overflow: hidden;
 }
 .sry_reImg img {
     width:300px;
