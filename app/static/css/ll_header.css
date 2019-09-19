@@ -121,7 +121,8 @@
     box-shadow: 1px 1px 7px white;
     position: absolute;
     top: 70px;
-    left: -150px;
+    left: 50%;
+    margin-left: -100px;
     display: none;
   }
   .ll_header .ll_nav .ll_new_people_email p {
@@ -159,7 +160,8 @@
     box-shadow: 1px 1px 7px white;
     position: absolute;
     top: 70px;
-    left: -250px;
+    left: 50%;
+    margin-left: -161px;
     box-sizing: border-box;
     padding-left: 27px;
     display: none;

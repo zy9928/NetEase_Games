@@ -10,7 +10,7 @@ export function ll_pic_reload2() {
         //     appendImg();
         //     img_move();
         // }
-        _promise(12);
+        _promise(16);
     })()
 
     // 根据滚动条的位置来加载节点
@@ -77,7 +77,6 @@ export function ll_pic_reload2() {
         .then(function () {
             remove_title();
             title();
-            console.log(111);
             
         })
     }

@@ -30,7 +30,6 @@ ll_login();
 // 给图片添加放大缩小
 (function () {
     var imgs = document.querySelectorAll('.ll_comment_left_three  img');
-    console.log(imgs);
     
     for(let i = 0; i < imgs.length; i++){
         ll_pic_big_small()(imgs[i].parentNode,imgs[i]);
