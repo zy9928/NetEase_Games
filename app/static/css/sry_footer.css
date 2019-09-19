@@ -13,7 +13,6 @@
     width:1260px;
     height:335px;
     margin:0 auto;
-    /* border:1px solid pink; */
 }
 .sry_f_box1 ,.sry_f_box3 {
     width:152px;
@@ -23,7 +22,6 @@
     float: left;
     margin-right: 14px;
     padding-top:40px;
-    /* background: pink; */
 }
 .sry_f_box1 p ,.sry_f_box2 p ,.sry_f_box3 p ,.sry_f_box4 p {
     text-indent: 30px;
@@ -187,6 +185,6 @@
     color:#fff;
     margin-right:5px;
 }
-.sry_f1_i2 a:hover ,.sry_f1_b a:hover{
+.sry_f1_list a:hover ,.sry_f1_b a:hover{
     text-decoration: underline;
 }

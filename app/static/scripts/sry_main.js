@@ -1,5 +1,5 @@
 // 热门游戏
-var sry_re_masks = document.querySelectorAll('.sry_reList1 .sry_re_mask');
+var sry_re_masks = document.querySelectorAll('.sry_re_mask');
 var sry_re_lis = document.querySelectorAll('.sry_reLi1');
 var sry_re_imgs = document.querySelectorAll('.sry_reLi1 .sry_reImg');
 
@@ -10,14 +10,19 @@ for(var i = 0; i < sry_re_imgs.length; i++){
     sry_re_masks[i].sry_re_timer1 = null;
     (function(x){
         sry_re_imgs[x].onmouseenter = function(){
+
             clearInterval(sry_re_masks[x].sry_re_timer1);
+
             sry_re_lis[x].style.overflow = 'hidden';
             sry_re_move(sry_re_masks[x],0);
             sry_re_masks[x].style.display = 'block';
+
             console.log(x);
         }
-        sry_re_masks[x].onmouseleave = function(){
+        sry_re_imgs[x].onmouseleave = function(){
+
             clearInterval(sry_re_masks[x].sry_re_timer1);
+
             sry_re_move(sry_re_masks[x],-170);
             sry_re_lis[x].style.overflow = 'hidden';
         }
@@ -42,25 +47,6 @@ function sry_re_move(dom,target){
         }
     },10);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // 客户端游戏
