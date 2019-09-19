@@ -99,7 +99,7 @@ require(['jquery','waterfall'], function($,water){
                     var contImgClass = "zy_daSSContLongKuai";
                     var contImgCont = `<img src="./../static/images/${json.zy_dsSSKuai[('text'+i)].zy_dsSSContImgKuai[1]}" alt="说说图片" class="zy_dsSSContImg">`
                 }
-                $('.zy_dsSSLang').append(`
+                $('.zy_dsSSBox').append(`
                 <a class="zy_dsSSKuai zy_tx">
                     <!-- ID栏 -->
                     <div class="zy_dsSSIDLang">
@@ -133,7 +133,14 @@ require(['jquery','waterfall'], function($,water){
         });
     };
     water.leadingOk(requestDateSS);
-    // water.bottomLoad(requestDateSS);
+    $('.zy_dsSSLang')[0].onscroll = function(){
+        let pageH = $('.zy_dsSSBox').height();
+        let winH = $('.zy_dsSSLang').height();
+        let pageScroll = $('.zy_dsSSLang').scrollTop();
+        if( pageH - winH - pageScroll <= 100 ){
+            requestDateSS();
+        }
+    };
 });
 
 // 工具栏宽高成比例

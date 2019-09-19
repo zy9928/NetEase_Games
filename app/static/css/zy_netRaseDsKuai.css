@@ -248,10 +248,15 @@
 .zy_dsSSLang {
   position: absolute;
   top: 381px;
+  height:945px;
+  overflow:auto;
   right: 10px;
   left: 10px;
 }
 
+.zy_dsSSBox{
+  width:100%;
+}
 .zy_dsSSKuai {
   font-size: 0;
   line-height: 0;
