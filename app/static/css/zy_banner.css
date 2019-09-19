@@ -274,6 +274,7 @@
 
   color: #fff;
   background-image: url(./../images/zy_bgBannerTipsYouKnow.png);
+  background-size: 100% 100%;
 }
 
 .zy_tipCont > p {
