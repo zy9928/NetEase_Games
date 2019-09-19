@@ -117,36 +117,24 @@ require(['jquery','waterfall'], function($,water){
                     </p>
                 </a>
                 `);
-                for(var k = 0 ; k < $('.zy_dsSSContImg').length; k++){
-                    var zy_ssImg = -($('.zy_dsSSContImg').eq(k).height())/2;
-                    $('.zy_dsSSContImg').eq(k).css('margin-top',zy_ssImg);
-                }
+            }
+
+            //使图片垂直居中
+            for(var k = 0 ; k < $('.zy_dsSSContImg').length; k++){
+                // 解决k取值问题
+                +function(n){
+                    // 解决图片加载异步问题
+                    $('.zy_dsSSContImg')[n].onload = function(){
+                        var zy_ssImg = -$('.zy_dsSSContImg')[n].height/2;
+                        $('.zy_dsSSContImg').eq(n).css('margin-top',zy_ssImg);
+                    };
+                }(k);
             }
         });
-    }
+    };
     water.leadingOk(requestDateSS);
     // water.bottomLoad(requestDateSS);
-    /* (async function(){
-        var res1 = await new Promise(function (resolve, reject){
-            water.leadingOk(requestDateSS);
-            resolve();
-        });
-        var res2 = await new Promise(function(resolve, reject){
-            let zy_ssImg = -($('.zy_dsSSContImg').height())/2;
-            $('.zy_dsSSContImg').css('margin-top',zy_ssImg);
-            resolve();
-        });
-    })(); */
 });
-
-/* require(['jquery'], function($){
-    $('.zy_dsSSContImg').ready(function(){
-        let zy_ssImg = -($('.zy_dsSSContImg').height())/2;
-        $('.zy_dsSSContImg').css('margin-top',zy_ssImg);
-        console.log("a");
-        
-    });
-}); */
 
 // 工具栏宽高成比例
 require(['jquery'], function($){
