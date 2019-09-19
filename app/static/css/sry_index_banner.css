@@ -230,12 +230,35 @@
 }
 .sry_tab_list li a {
     display:block;
-    width:188px;
+    width:184px;
     height:55px;
     padding:15px 10px 0 12px;
     position: relative;
     border-left:4px solid transparent;
 }
+
+
+/* 鼠标滑过特效 */
+.sry_tab_list .zy_tab_list_a_hover{
+    border-left:4px solid #cf0f32;
+    background-color:#080909;
+}
+.sry_tab_list .zy_tab_list_a_hover:after{
+    content: '';
+    display:block;
+    width:0;
+    height:0;
+    border-left:10px solid #080909;
+    border-top:8px solid transparent;
+    border-bottom:8px solid transparent;
+    position: absolute;
+    right:-10px;
+    top:50%;
+    margin-top:-8px;
+    z-index:1000;
+}
+
+
 .sry_tab_list img {
     width:40px;
     height:40px;
@@ -265,8 +288,15 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.sry_tab_list b {
-    /* display:block; */
+
+/* 鼠标点击特效 */
+.sry_tab_list .sry_tab_active {
+    border-left:4px solid #cf0f32;
+    background: #080909;
+}
+.sry_tab_list .sry_tab_active:after{
+    content: '';
+    display:block;
     width:0;
     height:0;
     border-left:10px solid #080909;
@@ -275,17 +305,11 @@
     position: absolute;
     right:-10px;
     top:50%;
-    margin-top:-5px;
+    margin-top:-8px;
     z-index:1000;
-    display:none;
 }
-.sry_tab_list .sry_tab_active {
-    border-left:4px solid #cf0f32;
-    background: #080909;
-}
-.sry_tab_list .sry_tab_bActive {
-    display:block;
-}
+
+
 .sry_tab_main .sry_tab_show {
     display:block;
 }
