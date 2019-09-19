@@ -1,24 +1,38 @@
 // 热门游戏
-var sry_re_mask = document.querySelector('.sry_re_mask');
+var sry_re_masks = document.querySelectorAll('.sry_re_mask');
 var sry_re_lis = document.querySelectorAll('.sry_reLi1');
-var sry_re_timer1;
-clearInterval(sry_re_timer1);
+var sry_re_imgs = document.querySelectorAll('.sry_reLi1 .sry_reImg');
 
-sry_re_lis[0].onmouseenter = function(){
-    clearInterval(sry_re_timer1);
-    sry_re_mask.style.display = 'block';
-    sry_re_move(sry_re_mask,0);
-}
-sry_re_lis[0].onmouseleave = function(){
-    clearInterval(sry_re_timer1);
-    sry_re_move(sry_re_mask,-170);
-    // sry_re_mask.style.display = 'none';
+// var sry_re_timer1;
+// clearInterval(sry_re_timer1);
+
+for(var i = 0; i < sry_re_imgs.length; i++){
+    sry_re_masks[i].sry_re_timer1 = null;
+    (function(x){
+        sry_re_imgs[x].onmouseenter = function(){
+
+            clearInterval(sry_re_masks[x].sry_re_timer1);
+
+            sry_re_lis[x].style.overflow = 'hidden';
+            sry_re_move(sry_re_masks[x],0);
+            sry_re_masks[x].style.display = 'block';
+
+            console.log(x);
+        }
+        sry_re_imgs[x].onmouseleave = function(){
+
+            clearInterval(sry_re_masks[x].sry_re_timer1);
+
+            sry_re_move(sry_re_masks[x],-170);
+            sry_re_lis[x].style.overflow = 'hidden';
+        }
+    })(i);
 }
 
 //匀速运动
 function sry_re_move(dom,target){
-    clearInterval(sry_re_timer1);
-    sry_re_timer1 = setInterval(function (){
+    clearInterval(dom.sry_re_timer1);
+    dom.sry_re_timer1 = setInterval(function (){
         if (dom.offsetTop > target) {//判断运动方向
             var speed = -5;//左走
         } else {
@@ -26,32 +40,13 @@ function sry_re_move(dom,target){
         }
         // 剩余运动量 <= 每次运动的量5
         if (Math.abs(dom.offsetTop - target) <= Math.abs(speed)) {
-            clearInterval(sry_re_timer1);
+            clearInterval(dom.sry_re_timer1);
             dom.style.top = target + 'px';//手动设置终点
         } else{
             dom.style.top = dom.offsetTop + speed + 'px';//每次的运动
         }
     },10);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // 客户端游戏

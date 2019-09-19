@@ -122,15 +122,15 @@
     display:none;
 }
 .sry_cliBott {
-    width:1260px;
     position: absolute;
     bottom:40px;
     left:50%;
-    margin-left:-100px;
+    margin-left:-80px;
     text-align: center;
     color: #5a5a5a;
     font-size: 12px;
 }
 .sry_cliBott span {
     float:left;
+    margin-right:5px;
 }

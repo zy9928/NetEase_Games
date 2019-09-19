@@ -213,9 +213,6 @@
     width:510px;
     height:350px;
     display:none;
-    /* position: absolute;
-    top:0;
-    left:0; */
 }
 .sry_tab_list {
     width:100%;
@@ -226,7 +223,6 @@
     height:70px;
     background: #272a2c;
     position:relative;
-    /* box-sizing: border-box; */
 }
 .sry_tab_list li a {
     display:block;
@@ -236,8 +232,11 @@
     position: relative;
     border-left:4px solid transparent;
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> sry
 /* 鼠标滑过特效 */
 .sry_tab_list .zy_tab_list_a_hover{
     border-left:4px solid #cf0f32;
@@ -288,6 +287,33 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+<<<<<<< HEAD
+
+/* 鼠标点击特效 */
+.sry_tab_list .sry_tab_active {
+    border-left:4px solid #cf0f32;
+    background: #080909;
+}
+.sry_tab_list .sry_tab_active:after{
+    content: '';
+    display:block;
+=======
+.sry_tab_list b {
+>>>>>>> sry
+    width:0;
+    height:0;
+    border-left:10px solid #080909;
+    border-top:8px solid transparent;
+    border-bottom:8px solid transparent;
+    position: absolute;
+    right:-10px;
+    top:50%;
+    margin-top:-8px;
+    z-index:1000;
+<<<<<<< HEAD
+=======
+    display:none;
+}
 
 /* 鼠标点击特效 */
 .sry_tab_list .sry_tab_active {
@@ -307,6 +333,7 @@
     top:50%;
     margin-top:-8px;
     z-index:1000;
+>>>>>>> sry
 }
 
 

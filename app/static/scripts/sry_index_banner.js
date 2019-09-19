@@ -59,13 +59,21 @@ var sry_nowIndex = 0;
 var sry_Timer1;
 clearInterval(sry_Timer1);
 
-sry_hide_move();
+// sry_hide_move();
 
 sry_bl.onmouseenter = function(){
+    clearInterval(sry_Timer1);
     sry_bl.style.background = '#3c3d3f';
     sry_lh[sry_nowIndex].style.display = 'block';
     clearInterval(sry_Timer1);
     sry_hide_move();
+}
+sry_bl.onmouseleave = function(){
+    clearInterval(sry_Timer1);
+    for(var i = 0 ; i < 5; i++){
+        sry_lh[i].style.display = 'none';
+    }
+    sry_bl.style.background = '#cf0f32';
 }
 function sry_hide_move(){
     clearInterval(sry_Timer1);
@@ -82,12 +90,7 @@ function sry_hide_move(){
 
     },3000);
 }
-sry_bl.onmouseleave = function(){
-    for(var i = 0 ;i < 5; i++){
-        sry_lh[i].style.display = 'none';
-    }
-    sry_bl.style.background = '#cf0f32';
-}
+
 
 //banner 里右侧按钮的轮播图
 var sry_br = document.querySelector('.sry_banner_right');
@@ -97,13 +100,21 @@ var sry_nowIndex2 = 0;
 var sry_Timer2;
 clearInterval(sry_Timer2);
 
-sry_hide_move2();
+// sry_hide_move2();
 
 sry_br.onmouseenter = function(){
+    clearInterval(sry_Timer2);
     sry_br.style.background = '#3c3d3f';
     sry_rh[sry_nowIndex2].style.display = 'block';
     clearInterval(sry_Timer2);
     sry_hide_move2();
+}
+sry_br.onmouseleave = function(){
+    clearInterval(sry_Timer2);
+    for(var j = 0 ;j < 5; j++){
+        sry_rh[j].style.display = 'none';
+    }
+    sry_br.style.background = '#cf0f32';
 }
 function sry_hide_move2(){
     clearInterval(sry_Timer2);
@@ -120,12 +131,7 @@ function sry_hide_move2(){
 
     },3000);
 }
-sry_br.onmouseleave = function(){
-    for(var j = 0 ;j < 5; j++){
-        sry_rh[j].style.display = 'none';
-    }
-    sry_br.style.background = '#cf0f32';
-}
+
 
 //banner底部盒子
 var lis = document.querySelectorAll('.sry_tab_list li');
@@ -143,6 +149,7 @@ for(var i = 0, len = lis.length; i < len; i++){
         this.children[0].className = str;
     }
 }
+
 var sry_tab_preIndex = 0;
 var sry_tab_as = document.querySelectorAll('.sry_tab_list li a');
 var sry_tab_imgs = document.querySelectorAll('.sry_tab_main img');
@@ -159,6 +166,7 @@ function sry_tab(n){
         sry_tab_preIndex = n;
     }
 }
+
 for(var j = 0; j < lis.length; j++){
     sry_tab(j);
 }
