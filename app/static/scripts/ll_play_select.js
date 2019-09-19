@@ -1,7 +1,11 @@
 import {ll_float_line} from './ll_float_line.js';
 import {ll_login} from './ll_login.js';
 import {ll_pic_scroll_top} from './ll_pic_scroll_top.js';
+<<<<<<< HEAD
 import {ll_pic_reload} from './ll_pic_reload.js';
+=======
+// import {ll_pic_reload} from './ll_pic_reload.js';
+>>>>>>> cpz
 
 // 下划线渐入
 (function () {
@@ -25,5 +29,10 @@ ll_login();
     
 })();
 
+<<<<<<< HEAD
 // 加载节点图片
 ll_pic_reload();
+=======
+// // 加载节点图片
+// ll_pic_reload();
+>>>>>>> cpz
