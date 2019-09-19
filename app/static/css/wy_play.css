@@ -156,7 +156,7 @@
 }
 
 .about .media {
-    width: 62.3%;
+    width: 56%;
     height: 32px;
     border-right: 1px solid #ccc;
     float: left;
@@ -171,7 +171,7 @@
 .about .media li {
     width: 30px;
     height: 31px;
-    margin-right: 14%;
+    margin-right: 10%;
     background: url(../images/focus1.png) no-repeat;
     float: left;
     cursor: pointer;
@@ -195,7 +195,6 @@
 }
 
 .about .media .zhihu {
-    width: 7.1%;
     background-position: -63px 3px;
     transition: 0.2s linear;
 }
@@ -205,7 +204,6 @@
 }
 
 .about .media .steam {
-    width: 7.1%;
     background-position: -93px 0;
     transition: 0.2s linear;
 }
