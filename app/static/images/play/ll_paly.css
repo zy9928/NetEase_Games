@@ -1,0 +1,41 @@
+.ll_play {
+  width: 100%;
+  min-height: 487px;
+}
+.ll_play .ll_play_left {
+  float: left;
+  width: 61%;
+  margin-right: 5%;
+}
+.ll_play .ll_play_left .title {
+  font-size: 35px;
+}
+.ll_play .ll_play_left ul {
+  width: 100%;
+  overflow: hidden;
+}
+.ll_play .ll_play_left ul li {
+  float: left;
+  width: 7.5%;
+  margin-right: 6.9%;
+  list-style: none;
+}
+.ll_play .ll_play_left ul li a {
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+}
+.ll_play .ll_play_left ul li a .ll_pic {
+  width: 100%;
+}
+.ll_play .ll_play_left ul li a .ll_pic img {
+  width: 100%;
+}
+.ll_play_right {
+  float: left;
+  width: 34%;
+  background: black;
+}
+.ll_play_right .title {
+  font-size: 35px;
+}

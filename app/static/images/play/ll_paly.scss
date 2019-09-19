@@ -1,0 +1,45 @@
+.ll_play{
+    width: 100%;
+    min-height: 487px;
+    .ll_play_left{
+        float: left;
+        width: 61%;
+        margin-right: 5%;
+        // background: red;
+        .title{
+            font-size: 35px;
+        }
+        ul{
+            width: 100%;
+            overflow: hidden;
+            li{
+                float: left;
+                width: 7.5%;
+                margin-right: 6.9%;
+                list-style: none;
+                // background: pink;
+                a{
+                    display: inline-block;
+                    text-decoration: none;
+                    width: 100%;
+                    .ll_pic{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    &_right{
+        float: left;
+        width: 34%;
+        background: black;
+        .title{
+            font-size: 35px;
+        }
+
+    }
+}
