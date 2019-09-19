@@ -9,6 +9,7 @@ clearInterval(sry_timer2);
 clearInterval(sry_timer1);
 
 sry_move(sry_imgs[sry_index],100);//进入页面执行，显示第一张图片
+sry_imgs[sry_index].style.zIndex = 10;
 sry_moveAuto();//自动播放
 
 // 自动播放

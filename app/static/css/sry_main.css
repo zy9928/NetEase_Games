@@ -10,7 +10,6 @@
     width:300px;
     height:130px;
     margin-right:20px;
-    /* border:1px solid #ccc; */
 }
 .sry_four a img {
     width:300px;
@@ -25,27 +24,216 @@
     width:1260px;
     height:710px;
     margin:0 auto;
-    border:1px solid pink;
+    margin-bottom:100px;
 }
-.sry_remenTit {
-    width:1260px;
+.sry_reLeft {
+    width:960px;
+    height:710px;
+    float:left;
+}
+.sry_reRight {
+    width:300px;
+    height:710px;
+    float:right;
+    overflow: hidden;
+}
+.sry_reList1 .sry_reLi1 {
+    position:relative;
+}
+/* .sry_reList1 .sry_reLi1:hover .sry_re_mask {
+    display:block;
+    transition:all 0.3 ease-in;
+} */
+.sry_reLi1 .sry_re_mask {
+    width:300px;
+    height:170px;
+    position: absolute;
+    top:-170px;
+    display:none;
+}
+.sry_reLi1 .sry_re_mask a {
+    display: block;
+    width:300px;
+    height:170px;
+}
+.sry_reLi1 .sry_re_mask img {
+    width:300px;
+    height:170px;
+}
+.sry_remenTit ,.sry_remenTit1 {
+    width:945px;
     height:22px;
+    line-height:22px;
     margin-bottom:30px;
-    /* border:1px solid red; */
+    position:relative;
+}
+.sry_remenTit1 {
+    width:300px;
 }
 .sry_reTiLeft ,.sry_reTiA ,.sry_reTiRight {
     float:left;
 }
-.sry_reTiLeft i {
+.sry_reTiLeft i ,.sry_reTiRight i {
     float:left;
     width:4px;
     height:22px;
     background: #cf1132;
     margin-right:16px;
 }
-.sry_reTiLeft b {
+.sry_reTiLeft b ,.sry_reTiRight b {
     height:22px;
     line-height:22px;
     font-size:24px;
     color:#4d5052;
+    font-weight:200;
+}
+.sry_reTiA {
+    position: absolute;
+    right:0;
+    float:left;
+    width:80px;
+    font-size:16px;
+    line-height:22px;
+}
+.sry_reTiA em {
+    display:block;
+    float:right;
+    width:22px;
+    height:16px;
+    margin-left:10px;
+    margin-top:3px;
+    background: url(../images/sry_img/sry_many.png) no-repeat -19px -38px;
+}
+.sry_reList1 {
+    width:100%;
+    height:710px;
+    position: relative;
+}
+.sry_reList1 li {
+    width:300px;
+    height:318px;
+    float:left;
+    margin:0 20px 20px 0;
+    position: relative;
+    background: #fff;
+}
+.sry_reImg {
+    float:left;
+    width:300px;
+    height:170px;
+    position: absolute;
+    top:0;
+}
+.sry_reImg img {
+    width:300px;
+    height:170px;
+}
+.sry_reLi1 .sry_reCen {
+    width:263px;
+    margin:20px 17px 0 20px;
+    border-bottom:1px solid #ccc;
+    position: absolute;
+    top:170px;
+} 
+.sry_reLi1 .sry_wu {
+    border:none;
+}
+.sry_reLi1 .sry_reCen h2 {
+    text-indent:12px;
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:7px;
+}
+.sry_reLi1 .sry_reCen p {
+    height:45px;
+    overflow: hidden;
+    position:relative;
+    line-height:22px;
+    font-size:14px;
+    color:#b1b1c2;
+    margin-bottom:5px;
+    margin-right:13px;
+}
+.sry_reLi1 .sry_reJin {
+    float:right;
+    width:88px;
+    height:30px;
+    line-height:30px;
+    position: absolute;
+    bottom:9px;
+    right:17px;
+    font-size:13px;
+    color:#b1b1c2;
+    background: url(../images/sry_img/sry_you.png) no-repeat right center;
+}
+.sry_reLi1 .sry_reJin:hover {
+    color:#cf1132;
+    background: url(../images/sry_img/sry_you1.png) no-repeat right center;
+}
+.sry_reRight .sry_reList2 {
+    width:100%;
+    height:100%;
+    position: relative;
+    background: #fff;
+}
+.sry_reList2 li {
+    width:255px; /*300px*/
+    height:72px;   /*110px*/
+    border:1px solid #ededed;
+    padding:18px 20px 18px 23px;
+    position:relative;
+}
+.sry_reList2 li:hover {
+    background: #f0f2f7;
+}
+.sry_reList2 li:hover .sry_reYou {
+    background: url(../images/sry_img/sry_reyou1.png) no-repeat 0 0;
+}
+.sry_reList2 li a {
+    float:left;
+    width:298px;
+    height:108px;
+}
+.sry_reList2 li a img {
+    width:72px;
+    height:72px;
+    float:left;
+    border-radius: 20%;
+}
+.sry_reList2 li a em ,b,span {
+    display: block;
+    line-height: 22px;
+    height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left:20px;
+}
+.sry_reList2 li a em {
+    font-size: 16px;
+    color: #555;
+}
+.sry_reList2 li a b {
+    font-size: 14px;
+    color: #999;
+}
+.sry_reList2 li a span {
+    font-size: 12px;
+    color: #999;
+}
+.sry_reList2 li a span i {
+    display:inline-block;
+    width:13px;
+    height:13px;
+    background: url(../images/sry_img/sry_many.png) no-repeat -37px -20px;
+}
+.sry_reList2 li a .sry_reYou {
+    float:right;
+    width:20px;
+    height:30px;
+    line-height:30px;
+    position: absolute;
+    top:40px;
+    right:18px;
+    background: url(../images/sry_img/sry_reyou.png) no-repeat right center;
 }
