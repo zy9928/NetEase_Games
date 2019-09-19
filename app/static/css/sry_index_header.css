@@ -1,5 +1,8 @@
 @charset 'utf-8';
 /* 首页除尾部以外的内容 */
+/* body {
+    background: #f6f7fb;
+} */
 .sry_wrap {
     width:100%;
     min-width:1260px;
@@ -7,6 +10,7 @@
     margin: 0 auto;
     position:relative;
     font-family: '微软雅黑';
+    background: #f6f7fb;
 }
 a:hover {
     text-decoration: none;
@@ -116,7 +120,6 @@ a:hover {
     top:100px;
     left:0;
     display:none;
-    /* z-index:200000; */
 }
 .sry_navTitle {
     color:#fff;
@@ -129,7 +132,6 @@ a:hover {
     color:#fff;
     float:right;
     font-size:14px;
-    /* margin:0 15px; */
 }
 .sry_N {
     display:inline-block;
@@ -146,7 +148,6 @@ a:hover {
 .sry_navLeft {
     float:left;
     width:445px;
-    border-right:1px solid #454545;
 }
 .sry_navRight {
     float:left;
@@ -180,7 +181,6 @@ a:hover {
     float:left;
     width:298px;  /*298*/
     padding:30px 0 30px 0;
-
 }
 .sry_nav_con1 h2 ,.sry_nav_con2 h2 ,.sry_nav_con3 h2  ,.sry_nav_con4 h2 {
     color:#6b614a;
