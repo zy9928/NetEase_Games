@@ -22,9 +22,11 @@ export function ll_pic_reload() {
             clearTimeout(time1);
 
             _promise(2);
-            
+
         }
     }
+
+
 
     // promise处理代码的先后执行顺序
     function _promise(pic_num) {
@@ -44,7 +46,6 @@ export function ll_pic_reload() {
         .then(function () {
             remove_title();
             title();
-            console.log(111);
             
         })
     }
@@ -56,9 +57,8 @@ export function ll_pic_reload() {
         var title = document.querySelector('.ll_reload_run_reload');
         if (title) {
             dom.removeChild(title);
-            
         }
-        
+
     }
 
     // // 插入提示
@@ -95,6 +95,7 @@ export function ll_pic_reload() {
 
         
         for(let i = 0; i < mask.length; i++){
+
 
 
             // 透明运动
