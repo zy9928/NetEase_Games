@@ -207,10 +207,9 @@ html,body{
                     left: 0;
                     // display: none;
                     z-index: 10;
-
                 }
                 .ll_reload_pic{
-                   margin-left: calc((100% - 456px)/2);
+                   width: 100%;
                 }
                 &:hover .ll_reload_pic{
                     transition: all 0.5s;

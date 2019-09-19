@@ -22,7 +22,6 @@ export function ll_pic_reload() {
             clearTimeout(time1);
 
             _promise(2);
-
             
         }
     }
