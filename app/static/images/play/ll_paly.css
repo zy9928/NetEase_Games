@@ -7,29 +7,62 @@
   width: 61%;
   margin-right: 5%;
 }
-.ll_play .ll_play_left .title {
+.ll_play .ll_play_left .ll_title {
+  border-bottom: 1px solid #E4E4E4;
+  overflow: hidden;
+  margin-bottom: 51px;
+}
+.ll_play .ll_play_left .ll_title p {
+  float: left;
   font-size: 35px;
+  color: #333333;
+  border-bottom: 8px solid #333333;
 }
 .ll_play .ll_play_left ul {
   width: 100%;
-  overflow: hidden;
 }
 .ll_play .ll_play_left ul li {
   float: left;
   width: 7.5%;
-  margin-right: 6.9%;
+  margin-right: 4.9%;
   list-style: none;
 }
 .ll_play .ll_play_left ul li a {
   display: inline-block;
   text-decoration: none;
   width: 100%;
+  position: relative;
 }
 .ll_play .ll_play_left ul li a .ll_pic {
   width: 100%;
 }
 .ll_play .ll_play_left ul li a .ll_pic img {
   width: 100%;
+}
+.ll_play .ll_play_left ul li a .ll_items_pic {
+  width: 28px;
+  height: 28px;
+  background: url("./images/ll_index1.png") no-repeat -106px 0;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -14px;
+  opacity: 0;
+}
+.ll_play .ll_play_left ul li a .ll_pic2 {
+  background-position: -135px 0px;
+}
+.ll_play .ll_play_left ul li a .ll_pic3 {
+  background-position: -164px 0px;
+}
+.ll_play .ll_play_left ul li a .ll_pic4 {
+  background-position: -193px 0px;
+}
+.ll_play .ll_play_left ul li a .ll_pic5 {
+  background-position: -223px 0px;
+}
+.ll_play .ll_play_left ul .li8 {
+  margin: 0;
 }
 .ll_play_right {
   float: left;
