@@ -170,7 +170,7 @@ html, body {
   z-index: 10;
 }
 .ll_main .ll_con .ll_con_pic_reload .ll_reload_box .ll_reload_pic {
-  margin-left: calc((100% - 456px)/2);
+  width: 100%;
 }
 .ll_main .ll_con .ll_con_pic_reload .ll_reload_box:hover .ll_reload_pic {
   transition: all 0.5s;
