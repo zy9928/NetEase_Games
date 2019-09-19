@@ -130,17 +130,20 @@ sry_br.onmouseleave = function(){
 //banner底部盒子
 var lis = document.querySelectorAll('.sry_tab_list li');
 for(var i = 0, len = lis.length; i < len; i++){
-    lis[i].onmouseover = function(){
-        this.children[1].style.display = 'block';
-        this.children[0].style.borderLeft = '4px solid #cf0f32';
-        this.children[0].style.background = '#080909';
+    lis[i].onmouseenter = function(){
+        // this.children[1].style.display = 'block';
+        var str = this.children[0].className;
+        str = str.concat(' zy_tab_list_a_hover');
+        this.children[0].className = str;
     };
-    lis[i].onmouseout = function(){
-        this.children[1].style.display = 'none';
-        this.children[0].style.borderLeft = '4px solid transparent';
-        this.children[0].style.background = '#272a2c';
+    lis[i].onmouseleave = function(){
+        // this.children[1].style.display = 'none';
+        var str = this.children[0].className;
+        str = str.replace('zy_tab_list_a_hover','');
+        this.children[0].className = str;
     }
 }
+
 var sry_tab_preIndex = 0;
 var sry_tab_as = document.querySelectorAll('.sry_tab_list li a');
 var sry_tab_imgs = document.querySelectorAll('.sry_tab_main img');
@@ -153,11 +156,11 @@ function sry_tab(n){
         sry_tab_as[sry_tab_preIndex].className = '';
         sry_tab_imgs[sry_tab_preIndex].className = '';
         sry_tab_as[n].className = 'sry_tab_active';
-        sry_tab_bs[n].className = 'sry_tab_bActive';
         sry_tab_imgs[n].className = 'sry_tab_show';
         sry_tab_preIndex = n;
     }
 }
+
 for(var j = 0; j < lis.length; j++){
     sry_tab(j);
 }
