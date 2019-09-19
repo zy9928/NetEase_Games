@@ -344,5 +344,72 @@
             "zy_dsSSZtPl": "100",
             "zy_dsSSZtDz": "1万"
         }
+    },
+    "userRec": {
+        "test1": {
+            "head": "zy_userRecHead1.jpg",
+            "id": "163Tyrant",
+            "js": "暴雪大神星际负责人"
+        },
+        "test2": {
+            "head": "zy_userRecHead2.jpg",
+            "id": "remuszhou",
+            "js": "暗黑破坏神壁纸分享"
+        },
+        "test3": {
+            "head": "zy_userRecHead3.jpg",
+            "id": "暴雪酒馆",
+            "js": "酒馆布告栏上总有新活动在等着大家！"
+        },
+        "test4": {
+            "head": "zy_userRecHead4.jpg",
+            "id": "炉边聚会",
+            "js": "关于炉石的一切，这里都有！"
+        },
+        "test5": {
+            "head": "zy_userRecHead5.jpg",
+            "id": "炉石传说盒子",
+            "js": "上盒子，上传说！"
+        },
+        "test6": {
+            "head": "zy_userRecHead6.jpg",
+            "id": "艾泽拉斯情报局",
+            "js": "暴雪资讯博主"
+        },
+        "test7": {
+            "head": "zy_userRecHead7.jpg",
+            "id": "凯恩之角",
+            "js": "暗黑破坏神玩家社区"
+        },
+        "test8": {
+            "head": "zy_userRecHead8.jpg",
+            "id": "岛田家的三少爷",
+            "js": "守望先锋最新资讯"
+        },
+        "test9": {
+            "head": "zy_userRecHead9.jpg",
+            "id": "魔兽争霸情报局",
+            "js": "魔兽争霸资讯博主"
+        },
+        "test10": {
+            "head": "zy_userRecHead10.jpg",
+            "id": "查尔星港",
+            "js": "暴雪资讯博主"
+        },
+        "test11": {
+            "head": "zy_userRecHead11.jpg",
+            "id": "夏一可死毒舌",
+            "js": "知名配音演员、主播、视频作者、战鸽氏族大酋长"
+        },
+        "test12": {
+            "head": "zy_userRecHead12.jpg",
+            "id": "炉石秋日丶",
+            "js": "炉石传说知名主播"
+        },
+        "test13": {
+            "head": "zy_userRecHead13.jpg",
+            "id": "啦啦啦不是狗狗狗",
+            "js": "知名炉石主播、竞技场高手"
+        }
     }
 }
