@@ -32,8 +32,37 @@ define(['jquery','run'],function($,run){
             run.uniformRun($(dom)[0].obj);
         });
     }
+
+    // 推荐用户点击事件
+    function clickRec(dom){
+        $(dom).on('click', function(){
+            var oldL = $('.zy_dsUserRecommendCont').scrollLeft();
+            if(dom == '.zy_dsUserRecBtnL'){
+                var sp = -20;
+                if(oldL <= 140){
+                    var tg = 0;
+                }else{
+                    var tg = oldL - 140;
+                }
+            }else{
+                var sp = 20;
+                var tg = oldL + 140;
+            }
+            $(dom)[0].obj = {
+                oldDate: oldL,
+                target: tg,
+                speed: sp,
+                result: function(value){$('.zy_dsUserRecommendCont').scrollLeft(value);},
+                timer: $(dom)[0],
+                ferquency: 40,
+            }
+            run.uniformRun($(dom)[0].obj);
+        });
+    }
+
     return {
         returnTop,
         onloadEvt,
+        clickRec,
     };
 })

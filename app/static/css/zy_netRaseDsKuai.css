@@ -143,7 +143,7 @@
 .zy_dsUserRecContLang {
   position: relative;
 
-  width: 10000px;
+  width: 1950px;
   height: 100%;
 }
 
@@ -248,10 +248,20 @@
 .zy_dsSSLang {
   position: absolute;
   top: 381px;
+  height:945px;
+  overflow:auto;
   right: 10px;
   left: 10px;
 }
 
+/* 隐藏滚动条 */
+.zy_dsSSLang::-webkit-scrollbar{
+	display:none;
+}
+
+.zy_dsSSBox{
+  width:100%;
+}
 .zy_dsSSKuai {
   font-size: 0;
   line-height: 0;

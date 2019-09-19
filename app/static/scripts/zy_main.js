@@ -36,8 +36,6 @@ require(['jquery','evt'], function($,evt){
     evt.onloadEvt(document);
 });
 
-
-
 // banner
 require(['jquery','tap'], function($,tap){
     tap.imgTap();
@@ -52,7 +50,7 @@ require(['jquery','waterfall'], function($,water){
     let requestDate = function (){
         $.getJSON('./../static/json/zy_dsLongText.json',function(json){
             // console.log(json.zy_dsLongTextLi[`text1`].zy_dsLongTextHead);
-            for(var i = 1 ; i <= 9 ; i++){
+            for(var i = 1 ; i <= 15 ; i++){
                 $('.zy_dsLongTextUl').append(`
                     <li class="zy_dsLongTextLi">
                         <a href="">
@@ -99,7 +97,7 @@ require(['jquery','waterfall'], function($,water){
                     var contImgClass = "zy_daSSContLongKuai";
                     var contImgCont = `<img src="./../static/images/${json.zy_dsSSKuai[('text'+i)].zy_dsSSContImgKuai[1]}" alt="说说图片" class="zy_dsSSContImg">`
                 }
-                $('.zy_dsSSLang').append(`
+                $('.zy_dsSSBox').append(`
                 <a class="zy_dsSSKuai zy_tx">
                     <!-- ID栏 -->
                     <div class="zy_dsSSIDLang">
@@ -133,7 +131,52 @@ require(['jquery','waterfall'], function($,water){
         });
     };
     water.leadingOk(requestDateSS);
-    // water.bottomLoad(requestDateSS);
+    $('.zy_dsSSLang')[0].onscroll = function(){
+        let pageH = $('.zy_dsSSBox').height();
+        let winH = $('.zy_dsSSLang').height();
+        let pageScroll = $('.zy_dsSSLang').scrollTop();
+        if( pageH - winH - pageScroll <= 100 ){
+            requestDateSS();
+        }
+    };
+
+    // 推荐用户
+    let requestDateRec = function(){
+        $.getJSON('./../static/json/zy_dsLongText.json', function(json){
+            // console.log(json.userRec);
+            for(var i = 1 ; i <= 13 ; i++){
+                $('.zy_dsUserRecContLang').append(`
+                    <div class="zy_dsUserRecommend">
+                        <img src="./../static/images/${json.userRec[('test'+i)].head}" alt="头像" class="zy_dsUserRecHead">
+                        <h6 class="zy_dsUserRecId">${json.userRec[('test'+i)].id}</h6>
+                        <p class="zy_dsUserRecJs">${json.userRec[('test'+i)].js}</p>
+                        <button class="zy_dsUserRecRead">查看主页</button>
+                    </div>
+                `);
+            };
+        });
+    };
+    water.leadingOk(requestDateRec);
+    $('.zy_dsUserRecommendCont')[0].onscroll = function(){
+        let pageH = $('.zy_dsUserRecContLang').width();
+        let winH = $('.zy_dsUserRecommendCont').width();
+        let pageScroll = $('.zy_dsUserRecommendCont').scrollLeft();
+        if( pageH - winH - pageScroll <= 100 ){
+            $('.zy_dsUserRecContLang').width(pageH + 1950);
+            requestDateRec();
+        }
+    };
+});
+
+// 推荐用户点击事件
+require(['jquery', 'evt'], function($, evt){
+    evt.clickRec('.zy_dsUserRecBtnL');
+    evt.clickRec('.zy_dsUserRecBtnR');
+    $('.zy_dsUserRecHyH').on('click', function(){
+        var maxW = $('.zy_dsUserRecContLang').width();
+        var value = Math.floor(Math.random()*maxW);
+        $('.zy_dsUserRecommendCont').scrollLeft(value);
+    });
 });
 
 // 工具栏宽高成比例
