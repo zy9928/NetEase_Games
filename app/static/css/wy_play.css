@@ -1,0 +1,840 @@
+/*********头部******************/
+
+#head {
+    background: #222222;
+    height: 50px;
+}
+
+/**********爱玩导航*************************/
+
+#con {
+    background: #F9F9F9;
+    overflow: hidden;
+}
+
+.nav {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+}
+
+/**********轮播图***************************/
+
+.nav .lunbo {
+    width: 64%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.nav .lunbo .one {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+}
+
+.nav .lunbo .one a {
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+
+.nav .lunbo img {
+    width: 100%;
+    height: 500px;
+    transition: 0.4s linear;
+}
+
+.nav .lunbo:hover img {
+    transform: scale(1.3);
+}
+
+.nav .lunbo .info {
+    width: 100%;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    position: absolute;
+    left: 20px;
+    bottom: 70px;
+    cursor: pointer;
+}
+
+.talk {
+    color: #fff;
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: url(../images/globals.png) -84px 0 no-repeat;
+}
+
+.talk span {
+    margin-left: 24px;
+    font-size: 16px;
+}
+
+.nav .lunbo .intro {
+    width: 50px;
+    height: 24px;
+    background: #737373;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+    border-radius: 5px 0 0 0;
+}
+
+.nav .lunbo .nums {
+    width: 62px;
+    height: 6px;
+    float: left;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.nav .lunbo .nums li {
+    width: 25px;
+    height: 6px;
+    background: #fff;
+    opacity: 0.5;
+    margin-right: 6px;
+    float: left;
+    cursor: pointer;
+}
+
+.nav .lunbo .nums .show {
+    background: #FFD222;
+    opacity: 1;
+}
+
+/***************导航右边*************************/
+
+.search {
+    width: 35.3%;
+    height: 57px;
+    float: left;
+    line-height: 57px;
+    position: relative;
+    margin-left: 0.7%;
+}
+
+.search input {
+    width: 89.2%;
+    height: 57px;
+    padding-left: 10.8%;
+    color: #333;
+    font-size: 16px;
+}
+
+.search .search-icon {
+    width: 24px;
+    height: 57px;
+    background: url(../images/globals.png) -18px 0 no-repeat;
+    position: absolute;
+    left: 8px;
+    top: 18px;
+    cursor: pointer;
+}
+
+.about {
+    float: left;
+    width: 35.3%;
+    height: 32px;
+    line-height: 32px;
+    margin: 35px 0 40px 0.7%;
+}
+
+.about .media {
+    width: 56%;
+    height: 32px;
+    border-right: 1px solid #ccc;
+    float: left;
+}
+
+.about .media span {
+    float: left;
+    font-size: 14px;
+    color: #666;
+}
+
+.about .media li {
+    width: 30px;
+    height: 31px;
+    margin-right: 10%;
+    background: url(../images/focus1.png) no-repeat;
+    float: left;
+    cursor: pointer;
+}
+
+.about .media .gold {
+    transition: 0.2s linear;
+}
+
+.about .media .gold:hover {
+    background-position-y: -31px;
+}
+
+.about .media .weibo {
+    background-position: -30px 2px;
+    transition: 0.2s linear;
+}
+
+.about .media .weibo:hover {
+    background-position-y: -28px;
+}
+
+.about .media .zhihu {
+    background-position: -63px 3px;
+    transition: 0.2s linear;
+}
+
+.about .media .zhihu:hover {
+    background-position-y: -28px;
+}
+
+.about .media .steam {
+    background-position: -93px 0;
+    transition: 0.2s linear;
+}
+
+.about .media .steam:hover {
+    background-position-y: -31px;
+}
+
+.about .hope {
+    width: 124px;
+    height: 32px;
+    float: left;
+    color: #666;
+    font-size: 14px;
+    background: url(../images/focus1.png) -123px 4px no-repeat;
+    cursor: pointer;
+    transition: 0.2s linear;
+    margin-left: 11.7%;
+    padding-left: 6.8%;             
+}
+
+.about .hope:hover {
+    background-position-y: -28px;
+    color: #f00;
+}
+
+.case {
+    float: left;
+    width: 35.3%;
+    height: 338px;
+    margin: 0 0 0 0.7%;
+}
+
+.case li {
+    float: left;
+    width: 49.1%;
+    height: 336px;
+    margin-right: 0.8%;
+    overflow: hidden;
+    position: relative;
+}
+
+.case li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.case li a img {
+    width: 100%;
+    height: 100%;
+    transition: 0.4s linear;
+}
+
+.case li:hover img {
+    transform: scale(1.2);
+}
+
+.case li p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    left: 6px;
+    bottom: 20px;
+}
+
+.case li .link {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #FAD222;
+    position: absolute;
+    bottom: 58px;
+    left: 20px;
+    border-radius: 2px;
+}
+
+.case li .no {
+    width: 0;
+    height: 0;
+    border: 20px solid #FAD222;
+    border-color: transparent transparent transparent #FAD222;
+    position: absolute;
+    bottom: 58px;
+    left: 120px;
+}
+
+/***********爱玩精选*******************/
+
+.jingxuan {
+    width: 61.3%;
+    height: 998px;
+    margin-top: 70px;
+}
+
+.title {
+    width: 100%;
+    height: 37px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.title span {
+    width: 15.7%;
+    height: 6px;
+    display: block;
+    background: #333;
+}
+
+.title h2 {
+    font-size: 36px;
+    color: #333;
+    font-weight: 700;
+}
+
+.title a {
+    width: 58px;
+    font-size: 16px;
+    color: #666;
+    float: right;
+    margin: -40px 3px 0 0;
+}
+
+.title a span {
+    float: right;
+    width: 18.7%;
+    height: 26px;
+    background: url(../images/globals.png) -8px 6px no-repeat;
+}
+
+.title a:hover {
+    color: #F4B126
+}
+
+.title a:hover span {
+    background-position-x: 2px;
+}
+
+.jingxuan-case {
+    width: 100%;
+    height: 920px;
+    margin-top: 30px;
+}
+
+.jingxuan-case li {
+    width: 48.6%;
+    height: 301px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin-right: 1.4%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.jingxuan-case li img {
+    width: 100%;
+    height: 301px;
+    transition: 0.3s linear;
+}
+
+.jingxuan-case li:hover img {
+    transform: scale(1.3);
+}
+
+.jingxuan-case li .mask {
+    width: 100%;
+    height: 301px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+    z-index: 1;
+}
+
+.jingxuan-case li .mask:hover {
+    opacity: 0.3;
+}
+
+.comment {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    left: 6px;
+    bottom: 20px;
+}
+
+.jingxuan-case li .author {
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    top: 100px;
+    left: 250px;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.jingxuan-case li:hover .author {
+    opacity: 1;
+}
+
+.jingxuan-case li .line {
+    width: 30.7%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 140px;
+    left: 190px;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.jingxuan-case li:hover .line {
+    opacity: 1;
+}
+
+.jingxuan-case li .talk {
+    width: 6.6%;
+    top: 160px;
+    left: 270px;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.jingxuan-case li:hover .talk {
+    opacity: 1;
+}
+
+/************爱玩评测*********************/
+
+.test {
+    width: 100%;
+    height: 374px;
+    margin-top: 82px;
+    overflow: hidden;
+}
+
+.test .test-case {
+    width: 100%;
+    height: 374px;
+    margin-top: 30px;
+}
+
+.test .test-case li {
+    width: 222px;
+    height: 296px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    transition: 0.3s ease-in-out;
+    margin-right: 0.5%;
+}
+.test .test-case li:nth-of-type(5){
+    margin-right: 0;
+}
+.test .test-case li:hover .content {
+    width: 340px;
+}
+
+.test .test-case li:hover {
+    width: 562px;
+}
+
+.test .test-case li a {
+    display: block;
+    width: 222px;
+    height: 100%;
+}
+
+.test .test-case li a img {
+    width: 222px;
+    height: 100%;
+    transition: 0.3s linear;
+}
+
+.test .test-case li:hover img {
+    transform: scale(1.3);
+}
+
+.test .test-case li .content {
+    width: 0;
+    height: 296px;
+    background: #fff;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    text-align: center;
+    overflow: hidden;
+    transition: width 0.2s ease-in-out;
+}
+
+.test-case .content .tit {
+    color: #333;
+    font-size: 20px;
+    margin-top: 34px;
+}
+
+.test-case .content .agree {
+    color: #666;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 14.7%;
+    margin-top: 24px;
+}
+
+.test-case .content i {
+    width: 3.4%;
+    height: 13px;
+    left: 35px;
+    position: absolute;
+    background: url(../images/index1.png) -74px 0 no-repeat;
+}
+
+.test-case .content .good {
+    top: 92px;
+}
+
+.test-case .content .bad {
+    background-position: -90px 0;
+    top: 200px;
+}
+
+.test-case .content .line {
+    width: 67.6%;
+    height: 1px;
+    background: #e4e4e4;
+    margin: 18px 0 16px 14.7%;
+}
+
+.test-case .content .disagree {
+    color: #999;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 14.7%;
+}
+
+.test .title a {
+    width: 2.7%;
+}
+
+.test .title a span {
+    width: 18.7%;
+}
+
+/**********游戏广告*********************/
+
+.adv1 {
+    width: 100%;
+    height: 150px;
+    margin-top: 40px;
+}
+
+.adv1 a {
+    width: 100%;
+    display: block;
+    height: 150px;
+}
+
+.adv1 a img {
+    width: 100%;
+    height: 100%;
+}
+
+/**********游戏前瞻920*390*********************/
+
+.qianzhan {
+    width: 61.3%;
+    height: 390px;
+    margin-top: 72px;
+    float: left;
+}
+
+.qianzhan-case {
+    width: 49.6%;
+    height: 308px;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-top: 30px;
+    overflow: hidden;
+    float: left;
+    margin-right: 0.2%;
+}
+.qianzhan .qianzhan-case:nth-of-type(3){
+    margin-right: 0;
+}
+.qianzhan-case a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.qianzhan-case a .switch {
+    width: 48.7%;
+    height: 296px;
+    margin: 6px 0 6px 6px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+.qianzhan-case a .switch .comment{
+    bottom: 30px;
+}
+
+.qianzhan-case a .switch img {
+    width: 100%;
+    height: 296px;
+    transition: 0.3s linear;
+}
+
+.qianzhan-case a .switch:hover img {
+    transform: scale(1.3);
+}
+
+.qianzhan-case .qianzhan-com {
+    width: 37.3%;
+    height: 100%;
+    margin: 20px 2.8% 0 3.3%;
+    float: left;
+}
+
+.qianzhan-case .qianzhan-com .touxiang {
+    width: 100%;
+    height: 40px;
+}
+
+.qianzhan-case .qianzhan-com .touxiang div {
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+.qianzhan-case .qianzhan-com .touxiang div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.qianzhan-case .qianzhan-com .touxiang p {
+    float: left;
+    margin: 10px 0 0 5px;
+    color: #666;
+    font-size: 16px;
+}
+
+.qianzhan-case .qianzhan-com .line {
+    width: 100%;
+    height: 1px;
+    background: #e4e4e4;
+    margin: 10px 0 18px 3.3%;
+    float: left;
+}
+
+.qianzhan-case .qianzhan-com .switch-con {
+    width: 84.8%;
+    color: #666;
+    font-size: 16px;
+    position: relative;
+    padding-left: 15.2%;
+}
+
+.qianzhan-case .qianzhan-com p span {
+    width: 17px;
+    height: 18px;
+    position: absolute;
+    left: 6px;
+    top: 30px;
+    background: url(../images/index1.png) -57px 0 no-repeat;
+}
+
+/***************游戏推荐******************************/
+.tuijian{
+    width: 61.3%;
+    height: 686px;
+    margin-top: 80px;
+    float: left;
+}
+.tuijian .tuijian-case{
+    width: 100%;
+    height: 608px;
+    margin-top: 32px;
+}
+.tuijian .tuijian-case li:nth-of-type(4),.tuijian .tuijian-case li:nth-of-type(6){
+    margin-right: 0;
+}
+.tuijian .tuijian-case .tuijian-case-one{
+    width: 23.1%;
+    height:296px;
+    float: left;
+    overflow: hidden;
+    margin-right: 2.5%;
+    position: relative;
+}
+.tuijian .tuijian-case .tuijian-case-one img{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s linear;
+}
+.tuijian .tuijian-case .tuijian-case-one:hover img{
+    transform: scale(1.3);
+}
+.tuijian .tuijian-case .tuijian-case-two{
+    width: 48.7%;
+    height: 296px;
+    float: left;
+    position: relative;
+    overflow:hidden;
+    margin-right: 2.5%;
+    margin-top: 15px;
+}
+.tuijian .tuijian-case .tuijian-case-two img{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s linear;
+}
+.tuijian .tuijian-case .tuijian-case-two:hover img{
+    transform: scale(1.3);
+}
+.tuijian .tuijian-case .tuijian-case-two .pandian{
+    width: 16.7%;
+    height: 30px;
+    position: absolute;
+    top:180px;
+    left: 15px;
+    text-align: center;
+    line-height: 30px;
+    color: #333;
+    font-size: 16px;
+    background:rgba(132,132,135,.8);
+}
+/****************即将发售936*520******************************/
+.onsale{
+    width: 34.7%;
+    height: 936px;
+    margin-top: 72px;
+    float: right;
+    margin-left: 3.9%;
+    margin: 72px 0.3% 0 0;
+}
+.onsale .title a{
+    width: 7.7%;    
+}
+.onsale .onsale-list{
+    width: 94.2%;
+    height: 890px;
+    margin-top:30px;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 0 2.9%;
+}
+.onsale .onsale-list .onsale-case{
+    width: 100%;
+    height: 86px;
+    border-bottom: 1px solid #e4e4e4;
+    transition:height 0.2s ease-in-out;
+}
+.onsale .onsale-list .onsale-case a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.onsale .onsale-list .onsale-case:nth-of-type(9){
+    border-bottom: none;
+}
+.onsale .onsale-list .onsale-case:hover{
+    height: 192px;
+}
+.onsale .onsale-list .onsale-case:hover img{
+    height: 132px;
+}
+.onsale .onsale-list .onsale-case div{
+    width: 19.2%;
+    height: 66px;
+    float: left;
+    margin-top: 10px;
+}
+.onsale .onsale-list .onsale-case div img{
+    width: 100%;
+    height: 100%;
+    transition:height 0.2s ease-in-out;
+}
+.onsale .onsale-list .onsale-case .onsale-case-con{
+    width: 70.4%;
+    height: 66px;
+    position: relative;
+    margin: 22px 0 0 4%;
+    transition:height 0.2s ease-in-out;
+}
+.onsale .onsale-list .onsale-case:hover .onsale-case-con{
+    height: 156px;
+}
+.onsale .onsale-list .onsale-case:hover .time{
+    transform: translateY(40px);
+}
+
+.onsale .onsale-list .onsale-case .text{
+    float: left;
+    color: #333;
+    font-size:18px;
+}
+.onsale .onsale-list .onsale-case .text span{
+    color: #999;
+    font-size: 14px;
+    opacity: 0;
+    transition: 0.2s linear;
+}
+.onsale .onsale-list .onsale-case:hover .text span{
+    opacity: 1;
+}
+.onsale .onsale-list .onsale-case .time{
+    color: #333;
+    font-size: 18px;
+    position: absolute;
+    transition: 0.2s linear;
+    top:10px;
+    left: 310px;
+    width: 61px;
+}
+.onsale .onsale-list .onsale-case .onsale-case-con .platform{
+    color: #999;
+    font-size:14px;
+    position:absolute;
+    top:30px;
+    left:0;
+    transition: 0.2s linear;
+}
+.onsale .onsale-list .onsale-case:hover .platform{
+    transform: translateY(60px);
+}
