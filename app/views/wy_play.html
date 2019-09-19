@@ -8,11 +8,86 @@
     <title>网易爱玩_游戏内容社区</title>
     <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/wy_play.css">
+    <link rel="stylesheet" href="../static/css/wy_play_head.css">
+    <link rel="stylesheet" href="../static/css/ll_footer.css">
 </head>
 
 <body>
-    <!-------------爱玩社区头部------------------->
-    <div id="head"></div>
+    <!-- 头部 -->
+    <div class="ll_header">
+
+        <a class="ll_header_index" href="">
+            <img class="ll_img_log" src="../static/images/ll_logo.png" alt="">
+        </a>
+
+        <div class="ll_nav">
+            <a class="ll_items1" style="color: #FFDC00" href="./ll_play_select.html">精选<span style="opacity: 1 "></span></a>
+            <a class="ll_items1" href="./ll_comment.html">游戏<span></span></a>
+            <a class="ll_a3 ll_items1" href="">评测库<span></span></a>
+
+            <em class="ll_em"></em>
+
+            <a class="ll_items2" href="./zy_baoXueDaShen.html">
+                <span class="ll_left_img ll_img"></span>
+                <span class="ll_right_text">暴雪游戏</span>
+            </a>
+            <a class="ll_items2" href="./index.html">
+                <span class="ll_left_img ll_img2"></span>
+                <span class="ll_right_text">网易游戏</span>
+            </a>
+            <a class="ll_items2" href="">
+                <span class="ll_left_img ll_img3"></span>
+                <span class="ll_right_text">网易大神</span>
+            </a>
+
+            <!-- 登陆 -->
+            <div class="ll_login">
+                <a class="ll_one_a" href="">登陆</a>
+                <div class="ll_login_form">
+
+                    <!-- 表单元素 -->
+                    <p class="ll_ipt">
+                        <span></span>
+                        <input class="ll_user" type="text">
+                        <em class="ll_top_em">邮箱账号或手机号</em>
+                    </p>
+                    <p class="ll_ipt ll_ipt2">
+                        <span class="ll_span2"></span>
+                        <input class="ll_password" type="text">
+                        <em class="ll_top_em">6~16位密码，区分大小写</em>
+                    </p>
+                    <p class="ll_bao_hu">使用<a href="">网易账号管家</a>，全面保护您的账号</p>
+                    <div class="ll_btn">登&nbsp;&nbsp;陆</div>
+
+                    <!-- 提示信息 -->
+                    <div class="ll_title">
+                        <input type="checkbox" id="ll_10day">
+                        <label for="ll_10day">十天内免登陆</label>
+                        <span>|</span>
+                        <a href="">忘记密码?</a>
+                        <a class="ll_a_register" href="">去注册</a>
+                    </div>
+
+                    <!-- 其它登陆方式 -->
+                    <div class="ll_other">
+                        <span>其它登陆方式</span>
+                        <div class="ll_wx"></div>
+                        <div class="ll_xl"></div>
+                        <div class="ll_qq"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 注册 -->
+            <div class="ll_new_people">
+                <a class="ll_new_people_a" href="">注册</a>
+                <div class="ll_new_people_email">
+                    <p>注册vip邮箱（特权邮箱，付费）</p>
+                </div>
+            </div>
+            <div class="ll_new_text">投稿</div>
+        </div>
+    </div>
     <!-------------爱玩内容------------------------------->
     <div id="con">
         <!-------------爱玩导航--------------------------->
@@ -539,8 +614,23 @@
             </a>
         </div>
     </div>
+    <!-- 尾部 -->
+    <div class="ll_footer">
+        <div class="ll_img">
+            <img src="../static/images/ll_logo.png" alt="">
+        </div>
+        <ul class="clear">
+            <li class="li1"><a href="">网站地图</a></li>
+            <li><a href="">商务合作</a></li>
+            <li><a href="">人才招聘</a></li>
+            <li><a href="">主编信箱</a></li>
+            <li class="li5"><a href="">友情链接</a></li>
+        </ul>
+        <p>广州网易计算机系统有限公司版权所有 ©1997-2019 《网络文化经营许可证》粤网文【2017】6527-1578号</p>
+    </div>
     <script src="../static/scripts/jquery-1.8.3.js"></script>
     <script type="module" src="../static/scripts/wy_play_nav_all.js"></script>
+    <script type="module" src="../static/scripts/ll_play_select.js"></script>
 </body>
 
 </html>
