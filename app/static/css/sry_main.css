@@ -37,29 +37,6 @@
     float:right;
     overflow: hidden;
 }
-.sry_reList1 .sry_reLi1 {
-    position:relative;
-}
-.sry_reLi1 .sry_re_mask {
-    width:300px;
-    height:170px;
-    position: absolute;
-    top:-170px;
-    /* display:none; */
-}
-.sry_reLi1 .sry_re_mask a {
-    display: block;
-    width:300px;
-    height:170px;
-}
-.sry_reLi1 .sry_re_mask img {
-    width:300px;
-    height:170px;
-}
-.sry_reBox {
-    width:300px;
-    height:340px;
-}
 .sry_remenTit ,.sry_remenTit1 {
     width:945px;
     height:22px;
@@ -121,6 +98,7 @@
     float:left;
     width:300px;
     height:170px;
+    /* height:340px; */
     position: absolute;
     top:0;
     overflow: hidden;
@@ -129,6 +107,23 @@
     width:300px;
     height:170px;
 }
+.sry_reLi1 .sry_re_mask {
+    width:300px;
+    height:170px;
+    position: absolute;
+    top:-170px;
+    display:none;
+}
+.sry_reLi1 .sry_re_mask a {
+    display: block;
+    width:300px;
+    height:170px;
+}
+.sry_reLi1 .sry_re_mask img {
+    width:300px;
+    height:170px;
+}
+
 .sry_reLi1 .sry_reCen {
     width:263px;
     margin:20px 17px 0 20px;
@@ -201,7 +196,7 @@
     float:left;
     border-radius: 20%;
 }
-.sry_reList2 li a em ,b,span {
+.sry_reList2 li a em ,b,.sry_reSp {
     display: block;
     line-height: 22px;
     height: 22px;

@@ -59,7 +59,7 @@ a:hover {
 .sry_header_list a:hover {
     color:#cf1132;
 }
-.sry_header_list span {
+.sry_header_list .sry_header_po {
     float:left;
     position: relative;
     top:-4px;

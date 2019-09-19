@@ -213,9 +213,6 @@
     width:510px;
     height:350px;
     display:none;
-    /* position: absolute;
-    top:0;
-    left:0; */
 }
 .sry_tab_list {
     width:100%;
@@ -286,7 +283,6 @@
     text-overflow: ellipsis;
 }
 .sry_tab_list b {
-    /* display:block; */
     width:0;
     height:0;
     border-left:10px solid #080909;
