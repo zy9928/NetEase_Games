@@ -1,0 +1,51 @@
+@charset 'utf-8';
+/* 轮播图下面的四个图 */
+.sry_four {
+    width:1260px;
+    height:130px;
+    margin:40px auto;
+}
+.sry_four li {
+    float:left;
+    width:300px;
+    height:130px;
+    margin-right:20px;
+    /* border:1px solid #ccc; */
+}
+.sry_four a img {
+    width:300px;
+    height:130px;
+}
+.sry_four .sry_lastLi {
+    margin-right:0;
+}
+
+/* 热门游戏 */
+.sry_remen {
+    width:1260px;
+    height:710px;
+    margin:0 auto;
+    border:1px solid pink;
+}
+.sry_remenTit {
+    width:1260px;
+    height:22px;
+    margin-bottom:30px;
+    /* border:1px solid red; */
+}
+.sry_reTiLeft ,.sry_reTiA ,.sry_reTiRight {
+    float:left;
+}
+.sry_reTiLeft i {
+    float:left;
+    width:4px;
+    height:22px;
+    background: #cf1132;
+    margin-right:16px;
+}
+.sry_reTiLeft b {
+    height:22px;
+    line-height:22px;
+    font-size:24px;
+    color:#4d5052;
+}
