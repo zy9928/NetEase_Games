@@ -9,7 +9,7 @@ clearInterval(sry_timer2);
 clearInterval(sry_timer1);
 
 sry_move(sry_imgs[sry_index],100);//进入页面执行，显示第一张图片
-sry_moveAuto();//自动播放
+// sry_moveAuto();//自动播放
 
 // 自动播放
 function sry_moveAuto(){
@@ -43,6 +43,8 @@ function sry_move(dom,target){
         if(Math.abs(opa - target) <= Math.abs(speed)){
             clearInterval(sry_timer2);
             dom.style.opacity = target / 100;
+            console.log("a");
+            
         }else{
             opa += speed;
             dom.style.opacity = opa / 100;
