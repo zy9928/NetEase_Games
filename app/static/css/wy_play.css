@@ -322,7 +322,7 @@
 }
 
 .title a {
-    width: 4.7%;
+    width: 58px;
     font-size: 16px;
     color: #666;
     float: right;
@@ -457,9 +457,11 @@
     overflow: hidden;
     float: left;
     transition: 0.3s ease-in-out;
-    margin-right: 0.7%;
+    margin-right: 0.5%;
 }
-
+.test .test-case li:nth-of-type(5){
+    margin-right: 0;
+}
 .test .test-case li:hover .content {
     width: 340px;
 }
@@ -587,7 +589,7 @@
     float: left;
     margin-right: 0.2%;
 }
-.qianzhan .qianzhan-case:nth-of-type(2){
+.qianzhan .qianzhan-case:nth-of-type(3){
     margin-right: 0;
 }
 .qianzhan-case a {
@@ -809,6 +811,7 @@
     transition: 0.2s linear;
     top:15px;
     left: 310px;
+    width: 61px;
 }
 .onsale .onsale-list .onsale-case .onsale-case-con .platform{
     color: #999;
